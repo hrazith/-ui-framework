@@ -1,0 +1,555 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMSS Sandbox</title>
+    <meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="styles/bmss-styles.css"/>
+    <!--[if lte IE 8]><script src="scripts/ie8.js"></script><![endif]-->
+	<script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="scripts/bmss-behaviors.js"></script>
+    <script type="text/JavaScript" src="scripts/css3-multi-column.js"></script>
+</head>
+
+<body>
+<div class="layout-978">
+	<div class="row topnav">
+    	<ul>
+        	<li><a href="index.html"><span class="icon-home"></span>BMSS</a></li>
+            <li><a class="active" href="#">Reports</a></li>
+            <li><a href="#">For Follow-up&nbsp;<span class="label">(23)</span></a></li>
+            <li><a href="#">Comments</a></li>
+            <li><a href="#">Tools</a></li>
+        </ul>
+    </div>
+    <div class="row">
+    	<div class="filters">
+            <ul>
+                <li>
+                    <span class="label">REGION</span>
+                    <button class="dropdown flat" role="button">Region 1</button>
+                </li>
+                <li><span class="label">DIVISION</span>
+                    <button class="dropdown flat" role="button">Division 1</button>
+                </li>
+                <li><span class="label">COMPLEX</span>
+                    <button class="dropdown flat" role="button">Complex 1</button>
+                </li>
+                <li><span class="label">BRANCH</span>
+                    <button class="dropdown flat" role="button">All</button>
+                </li>
+                <li><span class="label">DATE</span>
+                    <button class="dropdown flat" role="button">mm/dd/yy</button>
+                </li>
+                <li>
+                    <button class="disabled-transparent" role="button">Update Report List</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="titlebar">
+            <h2>Better Price&nbsp;<img src="images/icon-arrow-down-blue.png"/></h2>
+            <a class="button" href="#"><span aria-hidden="true" class=" icon-checkmark-circle"></span>Confirm Report Review</a>
+    	</div>
+    </div>
+    <div class="row">
+        <h3><span class="label">BRANCH: <span class="branch">NYC Branch really long name</span></span></h3>
+    </div>
+    <div class="row">
+    	<div class="violation">
+            <div class="violation-chk">
+                <input id="violation1chkbox" class="chkbox" type="checkbox" />
+                <label for="violation1chkbox" name="demo_lbl_1" class="chkbox-label"></label>
+            </div>
+            <h2 class="reason">List of accounts/trades (accounts and trade info on one line) under a single security grouped by primary FAID.</h2>
+            <ul>
+            	<li class="label">May 13, 2013</li>
+                <li class="label comments"><span aria-hidden="true" class="icon-chat"></span>Comments(14)</li>
+                <li><span class="quickcard riskprofile">QUICK CARD</span></li>
+            </ul>
+    	</div>
+    </div>
+ <div class="row fa-level">
+ 	<div class="fadeleft"><img src="images/left-of-falevel.png" width="72" height="43" alt=""></div>
+    <div class="fa">
+ 		<table class="fa">
+                <thead>
+                     <tr>
+                        <th class="label">PRIMARY FA</th>
+                        <th class="label">FA NAME</th>
+                      </tr>
+          		</thead>
+                <tbody>
+                      <tr>
+                        <td class="faid">WW11</td>
+                        <td>Micheal B Kemp</td>
+                      </tr>
+                </tbody>
+      	</table>
+      </div>
+ </div><!--/ sec-level-->
+ 
+ <div class="row">
+  <div class="col1">
+         	&nbsp;
+        
+    </div>
+    	<div class="col11">
+        	<div class="tableheader">
+              <table class="account">
+                <thead>
+                      <tr>
+                        <th class="label">SYMBOL</th>
+                        <th class="label">PRODUCT DESCRIPTION</th>
+                        <th class="label">SEC. NUMBER </th>
+                        <th class="label">CUSIP</th>
+                      </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td class="faid">WW11</td>
+                        <td>Aflac Inc.</td>
+                        <td class="security">19422</td>
+                        <td>001055102 </td>
+                      </tr>
+                </tbody>
+              </table>
+           	  <div class="acc-comments"><span class="icon-chat"><span class="counter">3</span></span></div>
+            </div><!--/ tableheader -->
+            
+            
+            <table width="100%" class="trades datagrid">
+                <thead>
+                  <tr>
+                  	<th>&nbsp;</th>
+                    <th>Acc. FAID</th>
+                    <th>Acct.# </th>
+                    <th> Client Name
+                    <th>B/S</th>
+                    <th>Exec Time </th>
+                    <th>Qty</th>
+                    <th>Price</th>        
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="chk"><input id="trade1chkbox" class="chkbox" type="checkbox" />
+                		<label for="trade1chkbox" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>AH11</td>
+                    <td>AH11233</td>
+                    <td>Manetta J</td>
+                    <td>0</td>
+                    <td>S</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade2chkbox2" class="chkbox" type="checkbox" />
+                    <label for="trade2chkbox2" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>DE32</td>
+                    <td>AH90821 </td>
+                    <td>Kemp LIV</td>
+                    <td>0</td>
+                    <td>S</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade3chkbox3" class="chkbox" type="checkbox" />
+                    <label for="trade3chkbox3" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>AH12</td>
+                    <td>AH23245 </td>
+                    <td>Mahesh Beja</td>
+                    <td>0</td>
+                    <td>S</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade4chkbox4" class="chkbox" type="checkbox" />
+                    <label for="trade4chkbox4" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>SZ23</td>
+                    <td>AH42278 </td>
+                    <td>Baskar Jain</td>
+                    <td>0</td>
+                    <td>S</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+              </tbody>
+			</table>
+            
+  </div><!--/ col11 -->
+        <div class="row-end">&nbsp;</div>   
+   </div><!--/ row -->
+    
+    <div class="row">
+  <div class="col1">
+         	&nbsp;
+        
+      </div>
+    	<div class="col11">
+        	<div class="tableheader">
+              <table class="account">
+                <thead>
+                      <tr>
+                        <th class="label">FAID</th>
+                        <th class="label">FA NAME</th>
+                        <th class="label">ACCOUNT#</th>
+                        <th class="label">CLIENT</th>
+                        <th class="label">AGE</th>
+                        <th class="label">PROFILE</th>
+                        <th class="label">INCOME</th>
+                        <th class="label">NETWORTH</th>
+                        <th class="label">TIME HORIZON</th>
+                      </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td>WW11</td>
+                        <td>James Fox</td>
+                        <td>WW4553667</td>
+                        <td>Jason Stamoas</td>
+                        <td>65</td>
+                        <td><span class="riskprofile">AGGRESSIVE</span></td>
+                        <td>$23,000,000</td>
+                        <td>$300,000,000</td>
+                        <td>&lt;3 yrs</td>
+                      </tr>
+                </tbody>
+              </table>
+           	  <div class="acc-comments"><span class="icon-chat"><span class="counter">3</span></span></div>
+            </div><!--/ tableheader -->
+            
+            <table width="100%" class="trades datagrid">
+                <thead>
+                  <tr>
+                  	<th>&nbsp;</th>
+                    <th>Description</th>
+                    <th>Security</th>
+                    <th>B/S</td>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Principal</th>
+                    <th>Commision</th>
+                    <th>S/U</th>
+                    <th>DE/NE</th>
+                   
+                    <th>Comments</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="chk"><input id="trade1chkbox" class="chkbox" type="checkbox" />
+                		<label for="trade1chkbox" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade2chkbox2" class="chkbox" type="checkbox" />
+                    <label for="trade2chkbox2" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                   
+                    <td>&nbsp;</td>
+                  </tr>
+              </tbody>
+			</table>
+            
+  </div><!--/ col11 -->
+        <div class="row-end">&nbsp;</div>   
+    </div><!--/ row -->
+    
+<div class="row">
+    	<div class="violation">
+            <div class="violation-chk">
+                <input id="violation1chkbox" class="chkbox" type="checkbox" />
+                <label for="violation1chkbox" name="demo_lbl_1" class="chkbox-label"></label>
+            </div>
+            <h2 class="reason">~</h2>
+            <ul>
+            	<li class="label">May 13, 2013</li>
+                <li class="label comments"><span aria-hidden="true" class="icon-chat"></span>Comments(14)</li>
+                <li><span class="quickcard riskprofile">QUICK CARD</span></li>
+            </ul>
+    	</div>
+   </div>
+    
+ 
+ <div class="row">
+  <div class="col1">
+         	&nbsp;
+        
+    </div>
+    	<div class="col11">
+        	<div class="tableheader">
+              <table class="account">
+                <thead>
+                      <tr>
+                        <th class="label">FAID</th>
+                        <th class="label">FA NAME</th>
+                        <th class="label">ACCOUNT#</th>
+                        <th class="label">CLIENT</th>
+                        <th class="label">AGE</th>
+                        <th class="label">PROFILE</th>
+                        <th class="label">INCOME</th>
+                        <th class="label">NETWORTH</th>
+                        <th class="label">TIME HORIZON</th>
+                      </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td>WW11</td>
+                        <td>James Fox</td>
+                        <td>WW4553667</td>
+                        <td>Jason Stamoas</td>
+                        <td>65</td>
+                        <td><span class="riskprofile">AGGRESSIVE</span></td>
+                        <td>$23,000,000</td>
+                        <td>$300,000,000</td>
+                        <td>&lt;3 yrs</td>
+                      </tr>
+                </tbody>
+              </table>
+           	  <div class="acc-comments"><span class="icon-chat"><span class="counter">3</span></span></div>
+            </div><!--/ tableheader -->
+            
+            <table width="100%" class="trades datagrid">
+                <thead>
+                  <tr>
+                  	<th>&nbsp;</th>
+                    <th>Description</th>
+                    <th>Security</th>
+                    <th>B/S</td>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Principal</th>
+                    <th>Commision</th>
+                    <th>S/U</th>
+                    <th>DE/NE</th>
+                    <th>Comments</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="chk"><input id="trade1chkbox" class="chkbox" type="checkbox" />
+                		<label for="trade1chkbox" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+					<td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade2chkbox2" class="chkbox" type="checkbox" />
+                    <label for="trade2chkbox2" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                    
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade3chkbox3" class="chkbox" type="checkbox" />
+                    <label for="trade3chkbox3" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                    
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade4chkbox4" class="chkbox" type="checkbox" />
+                    <label for="trade4chkbox4" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                    
+                    <td>&nbsp;</td>
+                  </tr>
+              </tbody>
+			</table>
+            
+  </div><!--/ col11 -->
+        <div class="row-end">&nbsp;</div>   
+   </div><!--/ row -->
+    
+    <div class="row">
+  <div class="col1">
+         	&nbsp;
+        
+      </div>
+    	<div class="col11">
+        	<div class="tableheader">
+              <table class="account">
+                <thead>
+                      <tr>
+                        <th class="label">FAID</th>
+                        <th class="label">FA NAME</th>
+                        <th class="label">ACCOUNT#</th>
+                        <th class="label">CLIENT</th>
+                        <th class="label">AGE</th>
+                        <th class="label">PROFILE</th>
+                        <th class="label">INCOME</th>
+                        <th class="label">NETWORTH</th>
+                        <th class="label">TIME HORIZON</th>
+                      </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td>WW11</td>
+                        <td>James Fox</td>
+                        <td>WW4553667</td>
+                        <td>Jason Stamoas</td>
+                        <td>65</td>
+                        <td><span class="riskprofile">AGGRESSIVE</span></td>
+                        <td>$23,000,000</td>
+                        <td>$300,000,000</td>
+                        <td>&lt;3 yrs</td>
+                      </tr>
+                </tbody>
+              </table>
+           	  <div class="acc-comments"><span class="icon-chat"><span class="counter">3</span></span></div>
+            </div><!--/ tableheader -->
+            
+            <table width="100%" class="trades datagrid">
+                <thead>
+                  <tr>
+                  	<th>&nbsp;</th>
+                    <th>Description</th>
+                    <th>Security</th>
+                    <th>B/S</td>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Principal</th>
+                    <th>Commision</th>
+                    <th>S/U</th>
+                    <th>DE/NE</th>
+                   
+                    <th>Comments</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="chk"><input id="trade1chkbox" class="chkbox" type="checkbox" />
+                		<label for="trade1chkbox" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                   
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade2chkbox2" class="chkbox" type="checkbox" />
+                    <label for="trade2chkbox2" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                    
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade3chkbox3" class="chkbox" type="checkbox" />
+                    <label for="trade3chkbox3" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                    
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="chk"><input id="trade4chkbox4" class="chkbox" type="checkbox" />
+                    <label for="trade4chkbox4" name="demo_lbl_1" class="chkbox-label"></label></td>
+                    <td>Eaton Valence Equity Income</td>
+                    <td>EXG</td>
+                    <td>B</td>
+                    <td>1000</td>
+                    <td>$9.30</td>
+                    <td>$9,430</td>
+                    <td>$150</td>
+                    <td>S</td>
+                    <td>N/A</td>
+                    
+                    <td>&nbsp;</td>
+                  </tr>
+              </tbody>
+			</table>
+            
+  </div><!--/ col11 -->
+        <div class="row-end">&nbsp;</div>   
+    </div><!--/ row -->
+    
+	<div class="row">
+    	<div class="actions-footer">
+       		<a class="button" href="#"><span aria-hidden="true"  class="icon-chat"></span>Comment</a>
+            <a class="button" href="#"><span aria-hidden="true"  class="icon-share"></span>Send to FA</a>
+            <a class="button" href="#"><span aria-hidden="true"  class="icon-flag"></span>Mark for Follow-up</a>
+            <a class="button" href="#"><span aria-hidden="true"  class="icon-Close"></span>Cancel Trade</a>
+            <a class="button" href="#"><span aria-hidden="true"  class="icon-pencil"></span>Trade Correction</a>
+        </div>
+    </div>
+    <div class="row footer"><p class="light-blue">&copy; 2013 Branch Manager Supervisory System</p></div>
+</div>
+</body>
+
+</html>

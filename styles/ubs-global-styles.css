@@ -1,0 +1,521 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/***************************************************************************** 
+These are styles that are repeated throughout the designs for WMF-IR and BMSS
+******************************************************************************/
+
+body {
+	cursor: default;
+}
+
+hr { 
+	border: 0; 
+	height: 0; 
+	border-top: 1px solid #ccc; 
+	border-bottom: 1px solid #fff;
+}
+
+img {  border:none; }
+
+a:hover {
+	cursor: pointer;
+}
+
+a.close {
+	padding: 4px 6px;
+}
+
+a.close:hover {
+	background:#ccc;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+a.close:active {
+	margin-top: 1px;
+}
+
+.right { float: right;}
+
+/* Fonts */
+
+.label {
+	color:#949494;
+	font-size:10px;
+	font-weight: normal;
+}
+
+.label:hover {
+	text-decoration: none !important;
+	cursor: default !important;
+}
+
+.blue {
+	color: #556996;
+}
+
+.light-blue {
+	color: #a5b9d1;
+}
+
+/***********************BUTTONS***********************/
+
+a.button {
+	
+	background-image: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6')";
+	border: 1px solid #949494;
+	
+	padding: 4px 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	float: left;
+	display: block;
+
+	text-shadow: rgba(0,0,0,.2) 0 1px 0;
+	color: white;
+	font-size: 12px;
+	font-weight:bold;
+	text-decoration: none;
+	vertical-align: middle;
+}
+a.button:hover {
+	border-color: #556896;
+	background: #556896;
+	color: #f0f0f0;
+}
+a.button:active {
+	background: #21354f;
+	margin-top: 1px;
+}
+
+a.button.secondary {
+	color: #556996;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d0d0d0));
+	background: -webkit-linear-gradient(top, #fff, #d0d0d0);
+	background: -moz-linear-gradient(top, #fff, #d0d0d0);
+	background: -ms-linear-gradient(top, #fff, #d0d0d0);
+	text-shadow: none;
+	font-weight: normal;
+}
+a.button.secondary:hover {
+	background: #f0f0f0;
+	color: #556996;
+	border-color:#949494;
+}
+
+a.button.secondary:active {
+	background: #fff;
+}
+
+/* Dropdowns */
+
+.dropdown {
+		   border: 1px solid #DDD;
+		   border-radius: 3px;
+		   text-shadow: 0 1px 1px white;
+		   -webkit-box-shadow: 0 1px 1px #fff;
+		   -moz-box-shadow:    0 1px 1px #fff;
+		   box-shadow:         0 1px 1px #fff;
+		   font: bold 11px Sans-Serif;
+		   padding: 6px 10px;
+		   white-space: nowrap;
+		   vertical-align: middle;
+		   color: #556996;
+		   background: transparent;
+		   cursor: pointer;
+}
+
+.dropdown:hover, .dropdown:focus {
+		   border-color: #556996;
+		   background: -webkit-linear-gradient(top, white, #E0E0E0);
+		   background:    -moz-linear-gradient(top, white, #E0E0E0);
+		   background:     -ms-linear-gradient(top, white, #E0E0E0);
+		   background:      -o-linear-gradient(top, white, #E0E0E0);
+		   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 0 3px #fff;
+		   -moz-box-shadow:    0 1px 2px rgba(0,0,0,0.25), inset 0 0 3px #fff;
+		   box-shadow:         0 1px 2px rgba(0,0,0,0.25), inset 0 0 3px #fff;
+}
+
+.dropdown:active {
+		   border: 1px solid #aaa;
+		   border-bottom-color: #ccc;
+		   border-top-color: #999;
+		   -webkit-box-shadow: inset 0 1px 2px #aaa;
+		   -moz-box-shadow:    inset 0 1px 2px #aaa;
+		   box-shadow:         inset 0 1px 2px #aaa;
+		   background: -webkit-linear-gradient(top, #E6E6E6, gainsboro);
+		   background:    -moz-linear-gradient(top, #E6E6E6, gainsboro);
+		   background:     -ms-linear-gradient(top, #E6E6E6, gainsboro);
+		   background:      -o-linear-gradient(top, #E6E6E6, gainsboro);
+}
+
+.dropdown:after {
+		   content: "";
+		   display: inline-block;
+		   width: 0;
+		   height: 0;
+		   border-top: 4px solid #556996;
+		   border-left: 4px solid transparent;
+		   border-right: 4px solid transparent;
+		   margin: 0 0 0 4px;
+		   position: relative;
+		   top: -1px;
+}
+		
+.dropdown:hover:after {
+		   border-top-color: #556996;
+}
+		
+/* Flat dropdowns */
+
+.dropdown.flat {
+	background: #fafafa;
+	border: 1px solid #c2c2c4;
+}
+
+/* Checkboxes */	
+	
+input[type=checkbox].chkbox {
+	display:none;
+}
+
+input[type=checkbox].chkbox + label.chkbox-label {
+	padding-left:22px;
+	height:22px; 
+	display:inline-block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].chkbox:checked + label.chkbox-label {
+	background-position: 0 -22px;
+}
+.chkbox-label{ background-image:url(../images/chk.png); }
+
+
+
+/***********************TABLES***********************/
+
+.datagrid {
+	border-collapse: collapse;
+}
+
+.datagrid thead tr th {
+	color: #949494;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left;
+	padding: 6px 8px;
+	border: 1px solid #c9c9c9;
+	background-image: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9)); 
+}
+
+.datagrid tbody tr td {
+	background: #fff;
+	padding: 6px 8px;
+	border: 1px solid #c9c9c9;
+}
+
+
+.datagrid tbody tr td.cash {
+	text-align: right;
+}
+
+
+
+
+/******* MODAL ***********************************/
+
+
+/* CONTAINERS 
+˹ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ˺
+*/
+
+.modal{
+	min-width:858px;
+	background:url(../images/modal-body-texture.png) repeat;
+	-moz-box-shadow:    0px 0px 2px 2px #2e2e2e;
+	 -webkit-box-shadow: 0px 0px 2px 2px #2e2e2e;
+	 box-shadow:         0px 0px 2px 2px #2e2e2e;
+	 -moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.modal .header, .modal .footer, .modal .body {
+	padding:12px;
+}
+
+.modal .header {
+	background:#FFF;
+	 -moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	border-bottom: #d7d7d7 1px solid;
+}  
+
+.modal .header h2, .dialog .header h2, .popup h2 {
+	font-size:12px;
+	font-weight:bold;
+	margin:0;
+	display:inline-block;
+}
+
+.modal .body {
+	border-top:#fff 1px solid;
+	border-bottom:#fff 1px solid;
+	
+}
+
+.modal .footer {
+	background:#FFF;
+	 -moz-border-radius:  0 0 4px 4px;
+	-webkit-border-radius:  0 0 4px 4px;
+	border-radius:  0 0 4px 4px;
+	border-top: #d7d7d7 1px solid;
+	overflow:auto;
+}  
+
+.modal div.right, .dialog div.right {
+	float:right;
+}
+
+
+.modal .left {
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+/***********************GRID***********************/
+
+/*
+
+978 Grid System CSS Framework
+http://978.gs
+
+Copyright (c) 2011 Brothers Roloff
+http://www.brothersroloff.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+div.layout-978 { width: 978px; margin: 0px auto; }
+
+div.row-end { clear: both; font: 1px/1px sans-serif; height: 1px; overflow: hidden; }
+
+div.col1, div.col2, div.col3, div.col4, div.col5, div.col6, div.col7, div.col8, div.col9, div.col10, div.col11, div.col12 { float: left; margin-left: 30px; }
+div.col1:first-child, div.col2:first-child, div.col3:first-child, div.col4:first-child, div.col5:first-child, div.col6:first-child, div.col7:first-child, div.col8:first-child, div.col9:first-child, div.col10:first-child, div.col11:first-child, div.col12:first-child { margin-left: 0px; }
+div.col1 { width: 54px; }
+div.col2 { width: 138px; }
+div.col3 { width: 222px; }
+div.col4 { width: 306px; }
+div.col5 { width: 390px; }
+div.col6 { width: 474px; }
+div.col7 { width: 558px; }
+div.col8 { width: 642px; }
+div.col9 { width: 726px; }
+div.col10 { width: 810px; }
+div.col11 { width: 894px; }
+div.col12 { width: 978px; }
+
+
+/***********************ICONS***********************/
+
+@font-face {
+	font-family: 'UBS-global-Icons';
+	src:url('../fonts/UBS-global-Icons.eot');
+	src:url('../fonts/UBS-global-Icons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UBS-global-Icons.woff') format('woff'),
+		url('../fonts/UBS-global-Icons.ttf') format('truetype'),
+		url('../fonts/UBS-global-Icons.svg#UBS-global-Icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'UBS-global-Icons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-Zoom-out, .icon-Zoom-in, .icon-Portfolio, .icon-Subtract, .icon-Add, .icon-Search, .icon-Question, .icon-Exclamation, .icon-Close, .icon-home, .icon-share, .icon-chat, .icon-migrate, .icon-Trash, .icon-Add-List, .icon-chart-alt, .icon-Back, .icon-Next, .icon-Expand, .icon-pencil, .icon-Exclamation-2, .icon-Exclamation-outline, .icon-AddList, .icon-Add-2, .icon-Subtract-2, .icon-Excel, .icon-Collapse, .icon-views, .icon-new-window, .icon-eject, .icon-calendar, .icon-email, .icon-Globe, .icon-filter, .icon-checkmark-circle, .icon-flag, .icon-forward, .icon-bolt, .icon-user, .icon-bookmark, .icon-warning {
+	font-family: 'UBS-global-Icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-Zoom-out:before {
+	content: "\e000";
+}
+.icon-Zoom-in:before {
+	content: "\e002";
+}
+.icon-Portfolio:before {
+	content: "\e007";
+}
+.icon-Subtract:before {
+	content: "\e003";
+}
+.icon-Add:before {
+	content: "\e004";
+}
+.icon-Search:before {
+	content: "\e005";
+}
+.icon-Question:before {
+	content: "\e006";
+}
+.icon-Exclamation:before {
+	content: "\e008";
+}
+.icon-Close:before {
+	content: "\e009";
+}
+.icon-home:before {
+	content: "\e00b";
+}
+.icon-share:before {
+	content: "\e00c";
+}
+.icon-chat:before {
+	content: "\e00d";
+}
+.icon-migrate:before {
+	content: "\e039";
+}
+.icon-Trash:before {
+	content: "\e001";
+}
+.icon-Add-List:before {
+	content: "\e00e";
+}
+.icon-chart-alt:before {
+	content: "\e015";
+}
+.icon-Back:before {
+	content: "\e014";
+}
+.icon-Next:before {
+	content: "\e016";
+}
+.icon-Expand:before {
+	content: "\e00f";
+}
+.icon-pencil:before {
+	content: "\e017";
+}
+.icon-Exclamation-2:before {
+	content: "\e011";
+}
+.icon-Exclamation-outline:before {
+	content: "\e012";
+}
+.icon-AddList:before {
+	content: "\e013";
+}
+.icon-Add-2:before {
+	content: "\e018";
+}
+.icon-Subtract-2:before {
+	content: "\e019";
+}
+.icon-Excel:before {
+	content: "\e01a";
+}
+.icon-Collapse:before {
+	content: "\e00a";
+}
+.icon-views:before {
+	content: "\e01b";
+}
+.icon-new-window:before {
+	content: "\e01c";
+}
+.icon-eject:before {
+	content: "\e01d";
+}
+.icon-calendar:before {
+	content: "\e01e";
+}
+.icon-email:before {
+	content: "\e01f";
+}
+.icon-Globe:before {
+	content: "\e022";
+}
+.icon-filter:before {
+	content: "\e023";
+}
+.icon-checkmark-circle:before {
+	content: "\e024";
+}
+.icon-flag:before {
+	content: "\e010";
+}
+.icon-forward:before {
+	content: "\e025";
+}
+.icon-bolt:before {
+	content: "\e020";
+}
+.icon-user:before {
+	content: "\e021";
+}
+.icon-bookmark:before {
+	content: "\e026";
+}
+.icon-warning:before {
+	content: "\e027";
+}
