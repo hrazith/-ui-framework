@@ -15,6 +15,14 @@
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
+    <!-- Loading UBS stylesheets -->
+    <link rel="stylesheet" href="css/ir-styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Loading UBS Javascript -->
+    <script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="scripts/ir-behaviors.js"></script>
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -57,21 +65,30 @@
         </ul>
     </ul> <!-- /nav -->
 
-		<h1 class="demo-headline">Components</h1>		
-    <div class="container">    	
-    	<div id="fui-button" class="pbl"></div>
-    	
+		<h1 class="demo-headline">Components</h1>   
+    <div class="container">     
+      <div id="fui-button" class="pbl"></div>
+      
       <div class="demo-row">
         <div class="demo-title">
-          <h3>Buttons</h3>
+          <h3>Buttons, Toggles and Check Boxes</h3>
         </div>
 
         <div class="demo-content">
           <p>
-            After restyling the <a href="http://getbootstrap.com/css/#buttons">Bootstrap buttons</a>, we have decided to add a new size: <code>btn-hg</code> which will be used for the main call to action buttons on the page:
+            <strong>Primary</strong> buttons are probably the most used action buttons of the IR application. They correspond to primary action of workflow. Usually there are only one Primary button in a workflow
           </p>
           <p class="mbl">
-            <button class="btn btn-hg btn-primary">Huge Button</button>
+            <div class="row buttons">
+            <a class="button" href="#"><span>Primary Button</span></a>
+            <a class="button small" href="#"><span>Primary Small</span></a>
+            <a class="button disabled" href="#"><span>Primary Button</span></a>
+            <a class="button small disabled" href="#"><span>Primary Small</span></a>
+            <a class="button" href="#"><span>Primary Button</span><span class="icon-button_forward_arrow"></span></a>
+            <a class="button small" href="#"></span><span>Primary Small</span><span class="icon-button_forward_arrow"></span></a>
+            <a class="button" href="#"><span class="icon-button_arrow_back"></span><span>Primary Button</span></a>
+            <a class="button small" href="#"><span class="icon-button_arrow_back"></span><span>Primary Small</span></a>
+        </div><!-- /div.row buttons-->
           </p>
 <pre class="prettyprint">
 &lt;button class="btn btn-hg btn-primary"&gt;
@@ -80,10 +97,19 @@
 </pre>
 
           <p class="ptl">
-            In addition, we have added <code>btn-embossed</code> to make buttons look more realistic, but we still prefer them flat.
+            <strong>Secondary</strong> corresponds to a secondary action of workflow. These are usually coupled with a primary action button. There can be more than one secondary actions in a workflow.
           </p>
           <p class="mbl">
-            <button class="btn btn-embossed btn-primary">Embossed Button</button>
+            <div class="row buttons">
+            <a class="button secondary" href="#"><span>Secondary Button</span></a>
+            <a class="button secondary small" href="#"><span>Secondary Small</span></a>
+            <a class="button secondary disabled" href="#"><span>Secondary Button</span></a>
+            <a class="button secondary small disabled" href="#"><span>Secondary Small</span></a>
+            <a class="button secondary" href="#"><span>Secondary Button</span><span class="icon-button_forward_arrow"></span></a>
+            <a class="button secondary small" href="#"></span><span>Secondary Small</span><span class="icon-button_forward_arrow"></span></a>
+            <a class="button secondary" href="#"><span class="icon-button_arrow_back"></span><span>Secondary Button</span></a>
+            <a class="button secondary small" href="#"><span class="icon-button_arrow_back"></span><span>Secondary Small</span></a>
+            </div><!-- /div.row buttons-->
           </p>
 <pre class="prettyprint">
 &lt;button class="btn btn-embossed btn-primary"&gt;
@@ -92,11 +118,15 @@
 </pre>
 
           <p class="ptl">
-            In some cases buttons need to become wider. Yes, we have taken care of that as well:
+            <strong>Mega Menu</strong> buttons appear in the main Add Investments Megamenu.
           </p>
           <p class="mbl">
-            <button class="btn btn-wide btn-primary mrm">Save</button>
-            <button class="btn btn-wide btn-default">Cancel</button>
+            <div class="row buttons">
+            <a class="button icon mm addsec" href="#"><span>My Saved Securities</span></a>
+            <a class="button icon mm" href="#"><span class="icon-excel_icon excel"></span>Import Excel List</a>
+            <a class="button icon mm addsec disabled" href="#"><span>Disabled Green</span> Button</a>
+          <a class="button icon mm addinv" href="#"><span>Add Investments</span></a>
+        </div><!-- /div.row buttons-->
           </p>
 <pre class="prettyprint">
 &lt;button class="btn btn-default btn-wide"&gt;
@@ -105,12 +135,17 @@
 </pre>
 
           <p class="ptl">
-            Another new thing is <code>btn-tip</code>. Use it when you need to highlight a part of the button text:
+            <strong>Action</strong> buttons appear in the dialogs or pop-ups.
           </p>
           <p class="mbl">
-            <button class="btn btn-primary">
-              Save
-              <span class="btn-tip">$300</span>
+            <div class="row buttons">
+              <span class="actbtn"><span aria-hidden="true" class="icon-pencil"></span>Rename</span></span>
+              <span class="actbtn"><span aria-hidden="true" class="icon-remove"></span>Delete</span></span><br/><br/>
+              <span class="actbtn"><span aria-hidden="true" class="icon-briefcase"></span>Portfolio#324</span></span><br/><br/>
+              <span class="actbtn"><span aria-hidden="true" class="icon-scales"></span>Weight Securities Evenly</span></span><br/><br/>
+              <span class="actbtn"><span aria-hidden="true" class="icon-arrow-down"></span>Zero out Current Holdings</span></span><br/><br/>
+              <span class="actbtn disable"><span aria-hidden="true" class="icon-briefcase"></span>Disabled Action Button</span></span>
+            </div><!-- /div.row buttons-->
             </button>
           </p>
 <pre class="prettyprint">
@@ -121,32 +156,34 @@
 </pre>
 
           <p class="ptl">
-            As usual you can set different colors:
+            <strong>Action</strong> buttons on dark background
           </p>
           <p>
-	          <button class="btn btn-default mrs">Default</button>
-            <button class="btn btn-primary mrs">Primary</button>
-            <button class="btn btn-info mrs">Info</button>
-            <button class="btn btn-danger mrs">Danger</button>
+            <div class="dark">
+              <span class="actbtn onpanel"><span aria-hidden="true" class="icon-disk"></span>Save Selected Securities</span><br/><br/>
+                <span class="actbtn onpanel disabled"><span aria-hidden="true" class="icon-disk"></span>Save (Diasabled)</span>
+            </div>
+          </p>
+
+<pre class="prettyprint">
+&lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+
+</pre>
+
+          <p class="ptl">
+            <strong>Chart Toggle</strong> appears at the Asset Allocation Sort Line.
           </p>
           <p class="mbl">            
-            <button class="btn btn-success mrs">Success</button>
-            <button class="btn btn-warning mrs">Warning</button>
-            <button class="btn btn-inverse mrs">Inverse</button>
+            <div class="charttoggle"><span class="label">View</span></div>
           </p>
 <pre class="prettyprint">
 &lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
 &lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
 &lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
-&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
-&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
-&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
-&lt;button class="btn btn-inverse"&gt;Inverse&lt;/button&gt;
-</pre>
 
-          <p>
-            Button groups, toolbars, and disabled state also work as expected.
-          </p>
+</pre>
         </div>        
       </div><!-- /.demo-row -->
       
