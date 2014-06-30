@@ -22,7 +22,9 @@
     <!-- Loading UBS Javascript--> 
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="js/ir-behaviors.js"></script>
+    <script type="text/javascript" src="js/ir-behaviors.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+   
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -192,29 +194,126 @@
 			
       <div class="demo-row">      	
         <div class="demo-title">
-          <h3>Checkboxes</h3>
+          <h3>Tables</h3>
         </div>
 
         <div class="demo-content">
           <p>
             Using flat style checkboxes requires a JS plugin which creates all the custom markup for us. Let's take a look:
           </p>
-          <label class="checkbox" for="checkbox1">
-            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox2">
-            <input type="checkbox" value="" id="checkbox2" checked="checked" data-toggle="checkbox">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox3">
-            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox4">
-            <input type="checkbox" value="" id="checkbox4" checked="checked" data-toggle="checkbox" disabled="">
-            Checkbox
-          </label>
+          
+
+<table cellpadding="0" cellspacing="0" border="0" id="table" class="sortable">
+    <thead>
+      <tr>
+        <th class="nosort"><h3>ID</h3></th>
+        <th><h3>Name</h3></th>
+        <th><h3>Phone</h3></th>
+        <th><h3>Email</h3></th>
+        <th><h3>Zip</h3></th>
+        <th><h3>Birthdate</h3></th>
+        <th><h3>Last Access</h3></th>
+        <th><h3>Rating</h3></th>
+        <th><h3>Done</h3></th>
+        <th><h3>Salary</h3></th>
+        <th><h3>Score</h3></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Ezekiel Hart</td>
+        <td>(627) 536-4760</td>
+        <td><a href="mailto:#">tortor@est.ca</a></td>
+        <td>53082</td>
+        <td>12/02/1962</td>
+        <td>March 26, 2009</td>
+        <td>-7</td>
+        <td>7%</td>
+        <td>$73,229</td>
+        <td>6.9</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jaquelyn Pace</td>
+        <td>(921) 943-5780</td>
+        <td><a href="mailto:#">in@elementum.org</a></td>
+        <td>46789</td>
+        <td>06/03/1957</td>
+        <td>October 20, 2006</td>
+        <td>-7</td>
+        <td>33%</td>
+        <td>$130,752</td>
+        <td>4.9</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lois Pickett</td>
+        <td>(835) 361-5993</td>
+        <td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+        <td>9814</td>
+        <td>10/15/1983</td>
+        <td>June 01, 1999</td>
+        <td>4</td>
+        <td>44%</td>
+        <td>$48,684</td>
+        <td>5.5</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Keane Raymond</td>
+        <td>(605) 803-1561</td>
+        <td><a href="mailto:#">at.risus.Nunc@ipsum.com</a></td>
+        <td>97129</td>
+        <td>07/30/1982</td>
+        <td>July 24, 1996</td>
+        <td>5</td>
+        <td>20%</td>
+        <td>$7,023</td>
+        <td>9.5</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <div id="controls">
+    <div id="perpage">
+      <select onchange="sorter.size(this.value)">
+      <option value="5">5</option>
+        <option value="10" selected="selected">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+      <span>Entries Per Page</span>
+    </div>
+    <div id="navigation">
+      <img src="images/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+      <img src="images/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+      <img src="images/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+      <img src="images/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+    </div>
+    <div id="text">Displaying Page <span id="currentpage"></span> of <span id="pagelimit"></span></div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+  var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+  </script>
+
+
+
+
+
 
           <h6 class="ptl">The Data Attributes:</h6>
 <pre class="prettyprint">
