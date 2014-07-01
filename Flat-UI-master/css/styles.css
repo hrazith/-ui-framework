@@ -198,7 +198,25 @@ section, header, footer {display: block;}
 
 /*sortable table stuff*/
 
+.sortable thead tr th {
+	color: #949494;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left;
+	padding: 6px 8px;
+	border: 1px solid #c9c9c9;
+	background-image: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9)); 
+}
 
+.sortable tbody tr td {
+	padding: 6px 8px;
+	border: 1px solid #c9c9c9;
+	white-space: nowrap;}
+	
 .sortable {width:980px; border-left:1px solid #c6d5e1; border-top:1px solid #c6d5e1; border-bottom:none; margin:0 auto 15px}
 .sortable th {background:url(images/header-bg.gif); text-align:left; color:#cfdce7; border:1px solid #fff; border-right:none}
 .sortable th h3 {font-size:10px; padding:6px 8px 8px}
@@ -220,6 +238,3 @@ section, header, footer {display: block;}
 #navigation {float:left; width:580px; text-align:center}
 #navigation img {cursor:pointer}
 #text {float:left; width:200px; text-align:right; margin-top:2px}
-
-
-
