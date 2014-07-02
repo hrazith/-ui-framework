@@ -272,7 +272,7 @@ h6,
 p {
   font-size: 18px;
   line-height: 1.72222;
-  margin: 0 0 15px;
+/*  margin: 0 0 15px;*/
 }
 .lead {
   margin-bottom: 30px;

@@ -10,25 +10,54 @@
 
         <div class="demo-content">
           <p>
-            <strong>Primary</strong> buttons are the most used action buttons. They correspond to primary action of workflow. Usually there are only one Primary button in a workflow
+            <strong>Primary</strong> buttons are the most used action buttons. They correspond to primary action of workflow. Usually there are only one Primary button in a workflow. Add "small" to your &lt;a class&gt; for small buttons
           </p>
           <p class="mbl">
             <div class="row buttons">
             <a class="button" href="#"><span>Primary Button</span></a>
             <a class="button small" href="#"><span>Primary Small</span></a>
-            <a class="button disabled" href="#"><span>Primary Button</span></a>
-            <a class="button small disabled" href="#"><span>Primary Small</span></a>
-            <a class="button" href="#"><span>Primary Button</span><span class="icon-button_forward_arrow"></span></a>
-            <a class="button small" href="#"></span><span>Primary Small</span><span class="icon-button_forward_arrow"></span></a>
-            <a class="button" href="#"><span class="icon-button_arrow_back"></span><span>Primary Button</span></a>
-            <a class="button small" href="#"><span class="icon-button_arrow_back"></span><span>Primary Small</span></a>
+          </div><!-- /div.row buttons-->
+          </p>
+<pre class="prettyprint">
+&lt;a class="button" href="#"&gt;
+  &lt;span&gt;Primary Button&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+              <p class="mbl">
+                <div class="row buttons">
+            <a class="button disabled" href="#"><span>Disabled Button</span></a>
+            <!-- <a class="button small disabled" href="#"><span>Disabled Small</span></a> -->
+            </div><!-- /div.row buttons-->
+          </p>
+<pre class="prettyprint">
+&lt;a class="button disabled" href="#"&gt;
+  &lt;span&gt;Disabled Button&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+              <p class="mbl">
+                <div class="row buttons">
+            <a class="button" href="#"><span>Button FW Icon</span><span class="icon-button_forward_arrow"></span></a>
+            <!-- <a class="button small" href="#"></span><span>Button FW Icon Small</span><span class="icon-button_forward_arrow"></span></a> -->
+            </div><!-- /div.row buttons-->
+          </p>
+<pre class="prettyprint">
+&lt;a class="button" href="#"&gt;
+  &lt;span&gt;Button FW Icon&lt;/span&gt;
+  &lt;span&gt;class="icon-button_forward_arrow"&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+              <p class="mbl">
+                <div class="row buttons">
+            <a class="button" href="#"><span class="icon-button_arrow_back"></span><span>Button Back Icon</span></a>
+            <!-- <a class="button small" href="#"><span class="icon-button_arrow_back"></span><span>Primary Small</span></a> -->
         </div><!-- /div.row buttons-->
           </p>
-          <br>
 <pre class="prettyprint">
-&lt;button class="btn btn-hg btn-primary"&gt;
-  Boss Button
-&lt;/button&gt;
+&lt;a class="button"&gt;
+  &lt;span&gt;Button Back Icon&lt;/span&gt;
+  &lt;span&gt;class="icon-button_arrow_back"&lt;/span&gt;
+&lt;/a&gt;
+&lt;/a&gt;
 </pre>
 
           <p class="ptl">
