@@ -1,0 +1,89 @@
+
+
+
+
+
+<div class="row">        
+
+<h1>Tables</h1>   <br>
+
+<table id="table" class="sortable">
+    <thead>
+      <tr>
+        <th class="nosort">ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Zip</th>
+        <th>Birthdate</th>
+        <th>Last Access</th>
+        <th>Rating</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Ezekiel Hart</td>
+        <td>(627) 536-4760</td>
+        <td><a href="mailto:#">tortor@est.ca</a></td>
+        <td>53082</td>
+        <td>12/02/1962</td>
+        <td>March 26, 2009</td>
+        <td>-7</td>
+
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jaquelyn Pace</td>
+        <td>(921) 943-5780</td>
+        <td><a href="mailto:#">in@elementum.org</a></td>
+        <td>46789</td>
+        <td>06/03/1957</td>
+        <td>October 20, 2006</td>
+        <td>-7</td>
+
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lois Pickett</td>
+        <td>(835) 361-5993</td>
+        <td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+        <td>9814</td>
+        <td>10/15/1983</td>
+        <td>June 01, 1999</td>
+        <td>4</td>
+
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Keane Raymond</td>
+        <td>(605) 803-1561</td>
+        <td><a href="mailto:#">at.risus.Nunc@ipsum.com</a></td>
+        <td>97129</td>
+        <td>07/30/1982</td>
+        <td>July 24, 1996</td>
+        <td>5</td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+          </div><!-- /row-->
+
+
+    <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+  var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+  </script>
