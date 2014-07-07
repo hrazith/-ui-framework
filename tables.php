@@ -38,5 +38,5 @@
     <script src="js/google-code-prettify/prettify.js"></script>
     <script src="js/application.js"></script>
   </body>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </html>

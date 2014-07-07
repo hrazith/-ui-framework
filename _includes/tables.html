@@ -83,21 +83,23 @@
 
 <h3>The CSS:</h3>
 <pre class="prettyprint">
-&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-var sorter = new TINY.table.sorter("sorter");
-  sorter.head = "head";
-  sorter.asc = "asc";
-  sorter.desc = "desc";
-  sorter.even = "evenrow";
-  sorter.odd = "oddrow";
-  sorter.evensel = "evenselected";
-  sorter.oddsel = "oddselected";
-  sorter.paginate = true;
-  sorter.currentid = "currentpage";
-  sorter.limitid = "pagelimit";
-  sorter.init("table",1);
-&lt;/script&gt;
+.sortable .head {
+  background:url(../images/sort.gif) left no-repeat; 
+  cursor:pointer; 
+  padding-left: 10px}
+.sortable .desc {
+  background:url(../images/desc.gif) left no-repeat; 
+  cursor:pointer;
+  padding-left: 10px}
+.sortable .asc  {
+  background:url(../images/asc.gif) left no-repeat; 
+  cursor:pointer;
+  padding-left: 10px}
+.sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color:#000}
+.sortable .evenrow td {background:#fff}
+.sortable .oddrow td {background:#ecf2f6}
+.sortable td.evenselected {background:#ecf2f6}
+.sortable td.oddselected {background:#dce6ee}
 </pre>
 
 
@@ -203,27 +205,14 @@ var sorter = new TINY.table.sorter("sorter");
 
 <h3>The CSS:</h3>
 <pre class="prettyprint">
-&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-var sorter = new TINY.table.sorter("sorter");
-  sorter.head = "head";
-  sorter.asc = "asc";
-  sorter.desc = "desc";
-  sorter.even = "evenrow";
-  sorter.odd = "oddrow";
-  sorter.evensel = "evenselected";
-  sorter.oddsel = "oddselected";
-  sorter.paginate = true;
-  sorter.currentid = "currentpage";
-  sorter.limitid = "pagelimit";
-  sorter.init("table",1);
-&lt;/script&gt;
+&lt;style&gt;
+
+&lt;/style&gt;
 </pre>
 
 
 <h3>The JS:</h3>
 <pre class="prettyprint">
-&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
 var sorter = new TINY.table.sorter("sorter");
   sorter.head = "head";
@@ -416,6 +405,32 @@ var sorter = new TINY.table.sorter("sorter");
                 </tr>
           </tbody>    
         </table>
+
+        <h3>The CSS:</h3>
+<pre class="prettyprint">
+&lt;style&gt;
+
+&lt;/style&gt;
+</pre>
+
+
+<h3>The JS:</h3>
+<pre class="prettyprint">
+&lt;script type="text/javascript"&gt;
+var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+&lt;/script&gt;
+</pre>
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
