@@ -229,24 +229,7 @@ textarea {
 			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#7384ab', EndColorStr='#3c5da6')";
 }
 
-.sortable:after {
-			content: "";
-		   display: inline-block;
-		   width: 0;
-		   height: 0;
-		   border-top: 4px solid #556996;
-		   border-left: 4px solid transparent;
-		   border-right: 4px solid transparent;
-		   margin: 0 0 0 4px;
-		   position: relative;
-		   top: -1px;
-}
 
-.sortable:hover:after, .selected.sortable:after{
-
-		   border-top: 4px solid #fff;
-
-}
 
 
 /************ MENU **************/
