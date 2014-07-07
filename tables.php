@@ -5,14 +5,6 @@
     <title>Tables - UX Sandbox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Loading Bootstrap -->
-   
-
-    <!-- Loading Flat UI -->
-
-
-    <link rel="shortcut icon" href="images/favicon.ico">
-
     <!-- Loading UBS stylesheets -->
     <link rel="stylesheet" href="css/UIframwork.css" />
     <link rel="stylesheet" href="css/ir-styles.css" />
@@ -46,4 +38,5 @@
     <script src="js/google-code-prettify/prettify.js"></script>
     <script src="js/application.js"></script>
   </body>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </html>

@@ -156,15 +156,15 @@ div.col12 { width: 978px; }
 .sortable thead tr th {
 	color: #949494;
 	font-size: 11px;
-	font-weight: normal;
+	font-weight: bold;
 	text-align: left;
 	padding: 6px 8px;
 	border: 1px solid #c9c9c9;
-	background-image: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
-	background-image: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
-	background-image: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
-	background-image: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9)); 
+	background: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9)); 
 }
 
 .sortable tbody tr td {
@@ -184,7 +184,6 @@ div.col12 { width: 978px; }
 		   position: relative;
 		   top: -1px;
 }
-
 .sortable:hover:after, .selected.sortable:after{
 	  border-top: 4px solid #fff;
 
@@ -197,6 +196,7 @@ div.col12 { width: 978px; }
 .sortable .head {background:url(../images/sort.gif) left no-repeat; cursor:pointer; padding-left: 10px}
 .sortable .desc {background:url(../images/desc.gif) left no-repeat; cursor:pointer;padding-left: 10px}
 .sortable .asc  {background:url(../images/asc.gif) left no-repeat; cursor:pointer;padding-left: 10px}
+.sortable .asc { }
 .sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color:#000}
 .sortable .evenrow td {background:#fff}
 .sortable .oddrow td {background:#ecf2f6}

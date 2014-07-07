@@ -5,14 +5,6 @@
     <title>Icons - UX Sandbox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Loading Bootstrap -->
-    
-
-    <!-- Loading Flat UI -->
-
-
-    <link rel="shortcut icon" href="images/favicon.ico">
-
     <!-- Loading UBS stylesheets -->
     <link rel="stylesheet" href="css/UIframwork.css" />
     <link rel="stylesheet" href="css/ir-styles.css" />
@@ -41,24 +33,6 @@
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/typeahead.js"></script>
-    <script src="bootstrap/js/google-code-prettify/prettify.js"></script>
-    <script src="js/application.js"></script>
-  </body>
-</html>
-
-
-
-
-
-
-
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.placeholder.js"></script>
     <script src="js/typeahead.js"></script>
     <script src="bootstrap/js/google-code-prettify/prettify.js"></script>
     <script src="js/application.js"></script>

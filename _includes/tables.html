@@ -1,11 +1,11 @@
 
-
-
-
-
 <div class="row">        
 
 <h1>Tables</h1>   <br>
+
+ <h3>Sorting Table</h3>
+
+<p>Here is a table that sorts the columns in ascending and descending order. Add the "sortable" class to the table</p>
 
 <table id="table" class="sortable">
     <thead>
@@ -18,7 +18,6 @@
         <th>Birthdate</th>
         <th>Last Access</th>
         <th>Rating</th>
-       
       </tr>
     </thead>
     <tbody>
@@ -31,7 +30,6 @@
         <td>12/02/1962</td>
         <td>March 26, 2009</td>
         <td>-7</td>
-
       </tr>
       <tr>
         <td>2</td>
@@ -42,7 +40,6 @@
         <td>06/03/1957</td>
         <td>October 20, 2006</td>
         <td>-7</td>
-
       </tr>
       <tr>
         <td>3</td>
@@ -53,7 +50,6 @@
         <td>10/15/1983</td>
         <td>June 01, 1999</td>
         <td>4</td>
-
       </tr>
       <tr>
         <td>4</td>
@@ -64,15 +60,11 @@
         <td>07/30/1982</td>
         <td>July 24, 1996</td>
         <td>5</td>
-
       </tr>
-      
     </tbody>
-  </table>
-          </div><!-- /row-->
-
-
-    <script type="text/javascript" src="script.js"></script>
+</table>
+        
+  <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript">
   var sorter = new TINY.table.sorter("sorter");
   sorter.head = "head";
@@ -87,3 +79,348 @@
   sorter.limitid = "pagelimit";
   sorter.init("table",1);
   </script>
+
+
+<h3>The CSS:</h3>
+<pre class="prettyprint">
+&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+&lt;/script&gt;
+</pre>
+
+
+<h3>The JS:</h3>
+<pre class="prettyprint">
+&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+&lt;/script&gt;
+</pre>
+
+
+ <h3>Data Grid</h3>
+<p>Here is a table with removeable line items.</p>
+
+    <div id="datagridcontainer">
+    <span class="icon-spam"></span>
+    <span class="icon-info"></span>
+        <table class="ir-datagrid">
+          <!-- Table header -->
+            <thead>
+                    <tr>
+                        <th scope="col" id="...">Description</th>
+                        <th scope="col" id="...">Symbol</th>
+                        <th scope="col" id="...">Current Value</th>
+                        <th scope="col" id="...">Current %</th>
+                        <th scope="col" id="...">Target $</th>
+                        <th scope="col" id="...">Target %</th>
+                        <th scope="col" id="...">Net Change</th>
+                        <th scope="col" id="...">- </th>
+                
+                    </tr>
+      </thead>
+              
+            <!-- Table footer -->
+                <tfoot>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Cash UBS Bank</td>
+                    </tr>
+                </tfoot>
+            
+            <!-- Table body -->
+                <tbody>
+                    <tr>
+                        <td>Cash UBS Bank</td>
+                        <td>PVFAX</td>
+                        <td class="cash">$95,862.93</td>
+                        <td class="cash">12.93%</td>
+                        <td class="cash">$3,330,030,340.33</td>
+                        <td class="cash">32.43%</td>
+                        <td class="cash">2.13%</td>
+                        <td class="icon-Delete"></td>
+                    </tr>
+                    <tr>
+                        <td>SPDR S&P EFT</td>
+                        <td>SPEFT</td>
+                        <td class="cash">$4,562.12</td>
+                        <td class="cash">6.23%</td>
+                        <td class="cash">$1,030,040,360.13</td>
+                        <td class="cash">13.29%</td>
+                        <td class="cash">2.93%</td>
+                        <td class="icon-Delete">&nbsp;</td>
+                    </tr>
+                       <tr>
+                        <td>Mutual Funds</td>
+                        <td>MFT</td>
+                        <td class="cash">$33,532.12</td>
+                        <td class="cash">5.43%</td>
+                        <td class="cash">$330,040,360.13</td>
+                        <td class="cash">33.29%</td>
+                        <td class="cash">2.43%</td>
+                        <td class="icon-Delete">&nbsp;</td>
+                    </tr>
+                     <tr class="recent">
+                        <td>Paradigm Value FUND .. </td>
+                        <td>PVFAX</td>
+                        <td class="cash">$23,862.93</td>
+                        <td class="cash">12.93%</td>
+                        <td class="cash">$2,032,020,320.23</td>
+                        <td class="cash">12.93%</td>
+                        <td class="cash">2.93%</td>
+                        <td class="icon-Delete">&nbsp;</td>
+                    </tr>
+            
+                </tbody>
+      </table>
+    </div>
+
+
+<h3>The CSS:</h3>
+<pre class="prettyprint">
+&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+&lt;/script&gt;
+</pre>
+
+
+<h3>The JS:</h3>
+<pre class="prettyprint">
+&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+&lt;/script&gt;
+</pre>
+
+
+
+<h3>Asset Allocation Table</h3>
+<p>Here is a table with a heirarchy of items.</p>
+      
+        
+        <table class="ir-datagrid aa-table">
+            
+        
+            <thead>
+            <tr class="aa-table-header">
+              <td class="clearall"><span class="label">Tier</span> 
+                        <button class="dropdown" role="button">
+                            Choose one ...
+                        </button>
+                </td>
+                <td colspan="2" class="blueme">Proposed Holding</td>
+                <td colspan="2" class="blueme">
+                  <button class="dropdown" role="button" style="background: #f0f0f0; box-shadow: none;">
+                            Asset Allocation Model
+                  </button>
+                </td>
+                <td colspan="2" class="blueme">
+               
+                            Net Change
+                          
+                </td>
+            </tr>
+              <tr>
+                  <th>
+                    
+                    </th>
+                  <th>
+                      Value ($)
+                  </th>
+                    <th>
+                      % of Portfolio
+                    </th>
+                  <th>
+                      Value ($)
+                  </th>
+                  <th>
+                      % of Portfolio
+                  </th>
+                  <th>
+                      Value ($)
+                  </th>
+                  <th>
+                      % of Portfolio
+                  </th>
+                </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                    <td>
+                        Total
+                    </td>
+                    <td>
+                        8,312,323.50
+                    </td>
+                    <td>
+                        100.00
+                    </td>
+                    <td>
+                        8,312,323.50
+                    </td>
+                    <td>
+                        100.00
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+              </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                  <td>
+                      <span class="icon-down_triangle" style="font-size: 10px; vertical-align: central;"></span>Fixed Income
+                    </td>
+                    <td>
+                      125,875.70
+                    </td>
+                    <td>
+                      1.51
+                    </td>
+                    <td>
+                      0.00
+                    </td>
+                    <td>
+                      0.00
+                    </td>
+                    <td>
+                      -125,875.70
+                    </td>
+                    <td>
+                      -1.51 <span class="icon-arrow-down" style="color: #ff0b00;"></span>
+                    </td>
+                </tr>
+                
+                <tr>
+                  <td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="icon-down_triangle" style="font-size: 10px; vertical-align: central;"></span>US
+                    </td>
+                    <td>
+                      7,854,889.60
+                    </td>
+                    <td>
+                      94.49
+                    </td>
+                    <td>
+                      5,735,719.19
+                    </td>
+                    <td>
+                      69.00
+                    </td>
+                    <td>
+                      -2,119,170.42
+                    </td>
+                    <td>
+                      -25.49 <span class="icon-arrow-down" style="color: #ff0b00;"></span>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="icon-down_triangle" style="font-size: 10px; vertical-align: central;"></span>Municipals
+                    </td>
+                    <td>
+                      7,854,889.60
+                    </td>
+                    <td>
+                      94.49
+                    </td>
+                    <td>
+                      5,735,719.19
+                    </td>
+                    <td>
+                      69.00
+                    </td>
+                    <td>
+                      -2,119,170.42
+                    </td>
+                    <td>
+                      25.49 <span class="icon-arrow-up" style="color: #21c614;"></span>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Core
+                    </td>
+                    <td>
+                      7,854,889.60
+                    </td>
+                    <td>
+                      94.49
+                    </td>
+                    <td>
+                      5,735,719.19
+                    </td>
+                    <td>
+                      69.00
+                    </td>
+                    <td>
+                      -2,119,170.42
+                    </td>
+                    <td>
+                      25.49 <span class="icon-arrow-up" style="color: #21c614;"></span>
+                    </td>
+                </tr>
+          </tbody>    
+        </table>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  </div><!-- /row-->
+
+
+
