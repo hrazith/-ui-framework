@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Buttons - UX Sandbox</title>
+    <title>Containers - UX Sandbox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading UBS stylesheets -->
@@ -21,7 +21,7 @@
   <body>
     
     <?php include("_includes/nav.html");?>
-    <?php include("_includes/buttons.html");?>
+    <?php include("_includes/containers.html");?>
 
 
     <!-- Load JS here for greater good =============================-->
