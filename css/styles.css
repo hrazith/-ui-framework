@@ -2,13 +2,13 @@
 
 
 body {
-	/*background:url(../images/texture.png) repeat;*/
+	background:url(../images/texture.png) repeat;
 }
 div.col1, div.col2, div.col3, div.col4, div.col5, div.col6, div.col7, div.col8, div.col9, div.col10, div.col11, div.col12 { 
 margin-left: 0px;
 padding-bottom: 25px;
 }
-div.row { padding-top: 10px; padding-bottom: 10px;  border: 1px blue solid; }
+div.row { padding-top: 10px; padding-bottom: 10px;  brder: 1px blue solid; }
 div.row:first-child { padding-top: 20px; }
 div.row:last-child { margin-top: 10px; padding: 20px 0px; }
 
