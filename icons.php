@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/ir-styles.css" />
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/UIframwork.css" />
+<link rel="stylesheet" href="css/iconstyle.css" />
 
     <!-- Loading UBS Javascript--> 
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
