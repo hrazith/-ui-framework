@@ -21,7 +21,18 @@
   <body>
     
     <?php include("_includes/nav.html");?>
-    <?php include("_includes/index.html");?>
+     <?php include("_includes/index.html");?>
+    <?php include("_includes/colorpalette.html");?>
+    <?php include("_includes/typography.html");?>
+    <?php include("_includes/headers.html");?>
+    <?php include("_includes/footers.html");?>
+    <?php include("_includes/tables.html");?>
+    <?php include("_includes/filters.html");?>
+    <?php include("_includes/megamenus.html");?>
+    <?php include("_includes/containers.html");?>
+    <?php include("_includes/buttons.html");?>
+    <?php include("_includes/icons.html");?>
+
 
 
     <!-- Load JS here for greater good =============================-->
