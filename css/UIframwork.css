@@ -1,6 +1,23 @@
 /*This stylesheet only applies to the stying of 
 the sandbox, not any of the elements*/
 
+
+/****************************
+     Header
+****************************/
+
+#header-wrap{
+  background-color: #DEE0E3;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header-wrap ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
 /****************************
      Side Navigation
 ****************************/
@@ -9,7 +26,7 @@ the sandbox, not any of the elements*/
   line-height: 1.214;
   height: 100%;
   left: 0;
-  margin: 0;
+  margin:0;
   list-style-type: none;
   overflow: auto;
   position: fixed;
