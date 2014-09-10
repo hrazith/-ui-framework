@@ -3,56 +3,233 @@
           <p>
             <strong>Primary</strong> buttons are the most used action buttons. They correspond to primary action of workflow. Usually there are only one Primary button in a workflow. Add "small" to your &lt;a class&gt; for small buttons
           </p>
+
+<!-- *********************************************************
+                       Primary Button
+***********************************************************-->
           <p>
             <div class="buttons">
             <a class="button" href="#"><span>Primary Button</span></a>
             <a class="button small" href="#"><span>Primary Small</span></a>
           </div><!-- /div.buttons-->
           </p>
+<br>
 
-<pre class="language-markup"><code>
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#primary-tab1">HTML</a></li>
+        <li><a href="#primary-tab2">CSS</a></li>
+    </ul>
+
+<div class="tab-content">
+    <div id="primary-tab1" class="tab active">
+        <p>
+            <pre class="language-markup">
+                <code>
 &lt;a class="button" href="#">
-&lt;span> Primary Button &lt;/span>
+  &lt;span> Primary Button &lt;/span>
 &lt;/a>
-</code>
-</pre>
+                </code>
+            </pre>
+        </p>
+    </div>
+ 
+    <div id="primary-tab2" class="tab">
+        <p>
+            <pre class="language-css">
+                <code>
+a.button {
+  
+  background-image: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6')";
+  border: 1px solid #949494;
+  
+  padding: 4px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  float: left;
+
+  text-shadow: rgba(0,0,0,.2) 0 1px 0;
+  color: white;
+  font-size: 12px;
+  font-weight:bold;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+a.button:hover {
+  border-color: #556896;
+  background: #556896;
+  color: #f0f0f0;
+}
+
+a.button:active {
+  background: #21354f;
+  margin-top: 1px;
+}
+                </code>
+            </pre>
+        </p>
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+
+<!-- ************************************************************************
+                          Primary Button Disabled
+**************************************************************************-->
               <p>
                 <div class="buttons">
             <a class="button disabled" href="#"><span>Disabled Button</span></a>
             <!-- <a class="button small disabled" href="#"><span>Disabled Small</span></a> -->
             </div><!-- /div.buttons-->
           </p>
-<pre class="language-markup"><code>
+
+          <br>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#primaryDisabled-tab1">HTML</a></li>
+        <li><a href="#primaryDisabled-tab2">CSS</a></li>
+    </ul>
+
+<div class="tab-content">
+    <div id="primaryDisabled-tab1" class="tab active">
+        <p>
+            <pre class="language-markup">
+                <code>
 &lt;a class="button disabled" href="#"&gt;
   &lt;span&gt;Disabled Button&lt;/span&gt;
 &lt;/a&gt;
-</code>
-</pre>
+                </code>
+            </pre>
+        </p>
+    </div>
+ 
+    <div id="primaryDisabled-tab2" class="tab">
+        <p>
+            <pre class="language-css">
+                <code>
+                  <!--CSS-->
+                </code>
+            </pre>
+        </p>
+    </div>
+ 
+    <div id="tab3" class="tab">
+        <p>
+            <pre class="language-js">
+                <code>
+                  <!--Javascript-->
+                </code>
+            </pre>
+        </p>
+    </div>
+
+</div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+                Primary Forward Button with Icon Right
+**********************************************************-->
               <p>
                 <div class="buttons">
             <a class="button" href="#"><span>Forward Button</span><span class="icon-button_forward_arrow"></span></a>
             </div><!-- /div.buttons-->
           </p>
 
-<pre class="language-markup"><code>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#PrimaryForwardButton-tab1">HTML</a></li>
+        <li><a href="#PrimaryForwardButton-tab2">CSS</a></li>
+    </ul>
+
+<div class="tab-content">
+    <div id="PrimaryForwardButton-tab1" class="tab active">
+        <p>
+            <pre class="language-markup">
+                <code>
 &lt;a class="button" href="#"&gt;
   &lt;span&gt;Forward Button&lt;/span&gt;
   &lt;span class="icon-button_forward_arrow"&gt; &lt;/span&gt;
 &lt;/a&gt;
-</code>
-</pre>
+                </code>
+            </pre>
+        </p>
+    </div>
+ 
+    <div id="PrimaryForwardButton-tab2" class="tab">
+        <p>
+            <pre class="language-css">
+                <code>
+                  <!--CSS-->
+                </code>
+            </pre>
+        </p>
+    </div>
+
+</div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+                Primary backward Button with Icon Left
+**********************************************************-->
               <p>
                 <div class="buttons">
             <a class="button" href="#"><span class="icon-button_arrow_back"></span><span>Backward Button</span></a>
         </div><!-- /div.buttons-->
           </p>
-<pre class="language-markup"><code>
+
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#PrimaryBackwardButton-tab1">HTML</a></li>
+        <li><a href="#PrimaryBackwardButton-tab2">CSS</a></li>
+    </ul>
+
+<div class="tab-content">
+    <div id="PrimaryBackwardButton-tab1" class="tab active">
+        <p>
+            <pre class="language-markup">
+                <code>
 &lt;a class="button" href="#"&gt;
 &lt;span class="icon-button_arrow_back"&gt; &lt;/span&gt;
   &lt;span&gt;Backward Button&lt;/span&gt;
 &lt;/a&gt;
-</code>
-</pre>
+                </code>
+            </pre>
+        </p>
+    </div>
+ 
+    <div id="PrimaryBackwardButton-tab2" class="tab">
+        <p>
+            <pre class="language-css">
+                <code>
+                  <!--CSS-->
+                </code>
+            </pre>
+        </p>
+    </div>
+</div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+                SecondaryButton-
+**********************************************************-->
 
           <p>
             <strong>Secondary</strong> corresponds to a secondary action of workflow. These are usually coupled with a primary action button. There can be more than one secondary actions in a workflow. Add "small" to your &lt;a class&gt; for small buttons
@@ -63,49 +240,192 @@
             <a class="button secondary small" href="#"><span>Secondary Small</span></a>
             </div><!-- /div.buttons-->
           </p>
-<pre class="language-markup"><code>
+
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SecondaryButton-tab1">HTML</a></li>
+        <li><a href="#SecondaryButton-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SecondaryButton-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
 &lt;a class="button secondary" href="#"&gt;
   &lt;span&gt;Secondary Button&lt;/span&gt;
 &lt;/a&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SecondaryButton-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+                      <!--CSS-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+                SecondaryButtonDisabled-
+**********************************************************-->
           <p>
           <div class="buttons">
             <a class="button secondary disabled" href="#"><span>Disabled Button</span></a>
             </div><!-- /div.buttons-->
           </p>
-<pre class="language-markup"><code>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SecondaryButtonDisabled-tab1">HTML</a></li>
+        <li><a href="#SecondaryButtonDisabled-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SecondaryButtonDisabled-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
 &lt;a class="button secondary disabled" href="#"&gt;
   &lt;span&gt;Disabled Button&lt;/span&gt;
 &lt;/a&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SecondaryButtonDisabled-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+                      <!--CSS-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+        <div id="tab3" class="tab">
+            <p>
+                <pre class="language-js">
+                    <code>
+                      <!--Javascript-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab3-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+                SecondaryForwardButton- to the right
+**********************************************************-->
           <p>
           <div class="buttons">
             <a class="button secondary" href="#"><span>Forward Button</span><span class="icon-button_forward_arrow"></span></a>
             </div><!-- /div.row buttons-->
           </p>
-<pre class="language-markup"><code>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SecondaryForwardButton-tab1">HTML</a></li>
+        <li><a href="#SecondaryForwardButton-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SecondaryForwardButton-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
 &lt;a class="button secondary" href="#"&gt;
   &lt;span&gt;Forward Button&lt;/span&gt;
   &lt;span class="icon-button_forward_arrow"&gt;&lt;/span&gt;
 &lt;/a&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SecondaryForwardButton-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+                      <!--CSS-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+
+<!-- *******************************************************
+                SecondaryBackwardButton- to the left
+**********************************************************-->
           <p>
           <div class="buttons">
             <a class="button secondary" href="#"><span class="icon-button_arrow_back"></span><span>Backward Button</span></a>
             </div><!-- /div. buttons-->
           </p>
-<pre class="language-markup"><code>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SecondaryBackwardButton-tab1">HTML</a></li>
+        <li><a href="#SecondaryBackwardButton-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SecondaryBackwardButton-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
 &lt;a class="button secondary" href="#"&gt;
   &lt;span&gt;Backward Button&lt;/span&gt;
   &lt;span class="icon-button_arrow_back"&gt;&lt;/span&gt;
 &lt;/a&gt;
-</code>
-</pre>
 
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SecondaryBackwardButton-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+                      <!--CSS-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
 
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+                ActionButtons-
+**********************************************************-->
           <p>
             <strong>Action</strong> buttons appear in the dialogs or pop-ups.
           </p>
@@ -127,7 +447,9 @@ Delete
 </code>
 </pre>
 
-
+<!-- *******************************************************
+               disabledActionButton-
+**********************************************************-->
          <div class="buttons">
               <span class="actbtn disable"><span aria-hidden="true" class="icon-briefcase"></span>Disabled Action Button</span>
             </div><!-- /div.buttons-->
@@ -162,7 +484,8 @@ Save (Diasabled)
 
 <!-- 
 ***************************************************
-Toggle buttons
+                  Toggle buttons
+***************************************************
 -->
 <h1>Toggle Buttons</h1>
 
