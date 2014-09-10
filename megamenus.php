@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading UBS stylesheets -->
-<link rel="stylesheet" href="css/global.css" />
-<link rel="stylesheet" href="css/ir-styles.css" />
-<link rel="stylesheet" href="css/styles.css" />
-<link rel="stylesheet" href="css/UIframwork.css" />
+<link rel="stylesheet" href="styles/global.css" />
+<link rel="stylesheet" href="styles/ir-styles.css" />
+<link rel="stylesheet" href="styles/styles.css" />
+<link rel="stylesheet" href="styles/UIframwork.css" />
 
 
     <!-- Loading UBS Javascript--> 

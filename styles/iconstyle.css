@@ -1,0 +1,33 @@
+body { 
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #2e2e2e;
+	background: url(../images/texture.png) repeat;
+	margin: 0 auto;
+	}
+
+h1{
+font-size: 32px;
+text-align: center;
+}
+
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+
+table{
+	float: left;
+	margin: 10px 10px;
+
+}
+
+td{
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+
+.white{
+	background-color: #556696;
+	color: #ffffff;
+}

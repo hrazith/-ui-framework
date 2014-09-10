@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* Buttons */
+
+/***************************************************************************** 
+Stuff about tables here
+******************************************************************************/
+
+	
+/***********************TABLES***********************/
+
+.datagrid {
+	border-collapse: collapse;
+}
+
+.datagrid thead tr th {
+	color: #949494;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: left;
+	padding: 6px 8px;
+	border: 1px solid #c9c9c9;
+	background-image: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9)); 
+}
+.datagrid tbody tr {
+	background: #fff;
+}
+
+.datagrid tbody tr td {
+	padding: 6px 8px;
+	border: 1px solid #c9c9c9;
+}
+
+
+.datagrid tbody tr td.cash {
+	text-align: right;
+}
+
+/** Zebra Stripe 
+ -- requires JQuery -- take this out of comment to see it in action
+ 
+ .odd { background: #949494 !important; }
+ 
+*/
+
+ 

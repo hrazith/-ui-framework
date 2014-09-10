@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* Buttons */
+
+/***************************************************************************** 
+Stuff about searchboxes here
+******************************************************************************/
+
+	
+/*********************** SEARCHBOX ***********************/
+
+.wrapper{
+		
+	}
+	#newsearch{
+		float:right;
+		padding:8px;
+	}
+	.textinput{
+		margin: 0;
+		padding: 4px 15px;
+		font-size:13px;
+		border:1px solid #21354F; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+		color: #21354F;
+	}
+	.go-button {
+		margin: 0;
+		padding: 4px 15px;
+		font-size:13px;
+		text-shadow: rgba(0,0,0,.2) 0 1px 0;
+		font-weight:bold;
+		outline: none;	
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #21354F;
+		
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		
+		background-image: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
+		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6')";
+		
+	}
+	.go-button:hover {
+		text-decoration: none;
+		background: #556896;
+		color: #f0f0f0;
+	}
+	.go-button:active {
+		background: #21354f;
+		color: #f0f0f0;
+	}
+	/* Fixes submit button height problem in Firefox */
+	.go-button::-moz-focus-inner {
+	  border: 0;
+	}
+	.sclear{
+		clear:both;
+	}
+	
+	.searchbox .actions {
+		margin: 2px 0 0 0;
+		font-size:10px;
+	}
+	.searchbox .actions li a:hover {
+		border-bottom: 1px dotted #a5b9d1;
+		color: #fff;
+	}
+
+	.searchbox .actions li {
+		display: inline;
+		margin-right: 12px;
+		color: #a5b9d1;
+	}
+	
+	.mysearches a:after {
+	
+			content: "";
+		   display: inline-block;
+		   width: 0;
+		   height: 0;
+		   border-top: 3px solid #a5b9d1;
+		   border-left: 3px solid transparent;
+		   border-right: 3px solid transparent;
+		   margin: 0 0 0 3px;
+		   position: relative;
+		   top: -1px;
+}

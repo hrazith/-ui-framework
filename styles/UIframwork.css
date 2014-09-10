@@ -1,0 +1,115 @@
+/*This stylesheet only applies to the stying of 
+the sandbox, not any of the elements*/
+
+
+/****************************
+     Header
+****************************/
+
+#header-wrap{
+  background-color: #DEE0E3;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header-wrap ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+/****************************
+     Side Navigation
+****************************/
+.sidebar {
+  font-size: 14px;
+  line-height: 1.214;
+  height: 100%;
+  left: 0;
+  margin:0;
+  list-style-type: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  width: 150px;
+  z-index: 10000;
+  background-color: #DEE0E3;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.sidebar li:first-child a {
+  padding-top: 20px;
+}
+.sidebar a {
+  display: block;
+  padding: 7px 20px;
+}
+
+.row {
+margin: 0 auto;
+padding: 0 140px;
+width: 940px;
+}
+
+pre {
+padding: 8px;
+margin: 0 0 15px;
+font-size: 13px;
+line-height: 1.72222;
+color: inherit;
+background-color: #ffffff;
+border: 2px solid #e7e9ec;
+border-radius: 6px;
+clear: both;
+}
+
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .prettyprint .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 20px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+
+
+/**********************
+      Containers
+**********************/
+
+#ir-modal{
+  margin: 0px auto 25px auto;
+}
+
+
+/**********************
+      index 
+**********************/
+
+.indexButton{
+  border-style: ridge;
+}
