@@ -114,7 +114,24 @@ a.button:active {
         <p>
             <pre class="language-css">
                 <code>
-                  <!--CSS-->
+                  /* Disabled button states */
+
+a.button.disabled {
+  background: #d4dae9 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#d4dae9', endColorstr='#d4dae9')"; /* IE8 */
+  text-shadow: none;
+  color: #f8f8f8;
+  border: none;
+}
+
+a.button.disabled:hover {
+  cursor: default;
+  border: none;
+}
+
+a.button.disabled:active {
+  margin-top: 0px;
+}
                 </code>
             </pre>
         </p>
@@ -216,7 +233,39 @@ a.button:active {
         <p>
             <pre class="language-css">
                 <code>
-                  <!--CSS-->
+a.button {
+  
+  background-image: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6')";
+  border: 1px solid #949494;
+  
+  padding: 4px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  float: left;
+
+  text-shadow: rgba(0,0,0,.2) 0 1px 0;
+  color: white;
+  font-size: 12px;
+  font-weight:bold;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+a.button:hover {
+  border-color: #556896;
+  background: #556896;
+  color: #f0f0f0;
+}
+
+a.button:active {
+  background: #21354f;
+  margin-top: 1px;
+}
                 </code>
             </pre>
         </p>
@@ -265,7 +314,30 @@ a.button:active {
             <p>
                 <pre class="language-css">
                     <code>
-                      <!--CSS-->
+a.button.secondary {
+  color: #556996;
+  background-image: -moz-linear-gradient(top, #ffffff, #d0d0d0); /* Firefox 3.6 */
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d0d0d0),color-stop(1, #ffffff)); /* Safari & Chrome */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#d0d0d0')"; /* IE8 */
+  text-shadow: none;
+  font-weight: normal;
+}
+a.button.secondary:hover {
+  background: #f0f0f0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0f0f0', endColorstr='#f0f0f0')"; /* IE8 */
+  color: #556996;
+  border-color:#949494;
+}
+
+a.button.secondary:active {
+  background: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#ffffff')"; /* IE8 */
+}
+
+a.button.small {
+  padding: 3px 6px;
+  font-size: 11px;
+}
                     </code>
                 </pre>
             </p>
@@ -309,21 +381,21 @@ a.button:active {
             <p>
                 <pre class="language-css">
                     <code>
-                      <!--CSS-->
+a.button.secondary.disabled {
+  color: #ccc;
+  background: #f6f6f6 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f6f6f6', endColorstr='#f6f6f6')"; /* IE8 */
+  border: 1px solid #ddd;
+}
+
+a.button.secondary.disabled:hover {
+  cursor: default;
+}
+
                     </code>
                 </pre>
             </p>
         </div><!-- /tab2-->
-     
-        <div id="tab3" class="tab">
-            <p>
-                <pre class="language-js">
-                    <code>
-                      <!--Javascript-->
-                    </code>
-                </pre>
-            </p>
-        </div><!-- /tab3-->
 
     </div><!-- /tab-content-->
 
@@ -436,7 +508,18 @@ a.button:active {
               <br/><br/>
               </div><!-- /div.buttons-->
           </p>
-<pre class="language-markup"><code>
+
+          <div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#ActionButtons-tab1">HTML</a></li>
+        <li><a href="#ActionButtons-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="ActionButtons-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
 &lt;span class="actbtn"&gt; &lt;span aria-hidden="true" class="icon-pencil"&gt;&lt;/span&gt;
 Rename
 &lt;/span&gt;
@@ -444,8 +527,44 @@ Rename
 &lt;span class="actbtn"&gt; &lt;span aria-hidden="true" class="icon-remove"&gt;&lt;/span&gt;
 Delete
 &lt;/span&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="ActionButtons-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                  <code>
+actbtn {
+  font-weight:bold;
+  font-size:10px;
+  padding: 4px 5px;
+  border: 1px solid #949494;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.actbtn:hover {
+  background-color:#fff;
+  cursor: pointer;
+}
+.actbtn:active {
+  cursor: pointer;
+}
+
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
 
 <!-- *******************************************************
                disabledActionButton-
@@ -454,12 +573,48 @@ Delete
               <span class="actbtn disable"><span aria-hidden="true" class="icon-briefcase"></span>Disabled Action Button</span>
             </div><!-- /div.buttons-->
           </p>
-<pre class="language-markup"><code>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#disabledActionButton-tab1">HTML</a></li>
+        <li><a href="#disabledActionButton-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="disabledActionButton-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
 &lt;span class="actbtn disable"&gt; &lt;span aria-hidden="true" class="icon-briefcase"&gt;&lt;/span&gt;
 Disabled Action Button
 &lt;/span&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="disabledActionButton-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.actbtn.disable {
+  color: #bbb;
+  border-color:#bbb;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+               ActionButtonOnPanel-
+**********************************************************-->
 
           <p>
             <strong>Action</strong> buttons on dark background
@@ -471,7 +626,17 @@ Disabled Action Button
             </div>
           </p>
 
-<pre class="language-markup"><code>
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#ActionButtonOnPanel-tab1">HTML</a></li>
+        <li><a href="#ActionButtonOnPanel-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="ActionButtonOnPanel-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
 &lt;span class="actbtn onpanel"&gt;&lt;span aria-hidden="true" class="icon-disk"&gt;&lt;/span&gt;
 Save Selected
 &lt;/span&gt;
@@ -479,8 +644,56 @@ Save Selected
 &lt;span class="actbtn onpanel disabled"&gt;&lt;span aria-hidden="true" class="icon-disk"&gt;&lt;/span&gt;
 Save (Diasabled)
 &lt;/span&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="ActionButtonOnPanel-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.actbtn.onpanel {
+  font-size:11px;
+  color:#ffffff;
+  border: 1px solid #f0f0f0;
+}
+
+.actbtn.onpanel:hover {
+  background-color:#a5b9d1;
+  border: 1px solid #a5b9d1;
+  color:#21354f;
+  cursor: pointer;
+}
+
+.actbtn.onpanel:active {
+  cursor:pointer;
+  margin-top: 1px;
+  background-color:#21354f;
+  border: 1px solid #21354f;
+  color:#ffffff;
+}
+.actbtn.onpanel.disabled {
+  color:#828ea9;
+  border: 1px solid #828ea9;
+}
+
+.actbtn.onpanel.disabled:hover{
+  background:none !important;
+  border: 1px solid #828ea9;
+}
+  
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
 
 <!-- 
 ***************************************************
@@ -489,33 +702,145 @@ Save (Diasabled)
 -->
 <h1>Toggle Buttons</h1>
 
+
+<!-- *******************  Chart toggle *********************-->
           <p>
             <p><strong>Chart Toggle</strong> appears at the Asset Allocation Sort Line.</p>
             <div class="charttoggle"><span class="label">View</span></div>
           </p>
 
-<pre class="language-markup"><code>
-&lt;div class="charttoggle"&gt;
-&lt;span class="label"&gt;
-View
-&lt;/span&gt;&lt;/div&gt;
-</code>
-</pre>
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#charttoggle-tab1">HTML</a></li>
+        <li><a href="#charttoggle-tab2">CSS</a></li>
+        <li><a href="#charttoggle-tab3">JavaScript</a></li>
+    </ul>
 
+    <div class="tab-content">
+        <div id="charttoggle-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div class="charttoggle"&gt;
+  &lt;span class="label"&gt;
+    View
+  &lt;/span&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="charttoggle-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+
+.charttoggle {
+  height: 22px;
+  width: 90px;
+  cursor:pointer;
+  background:url(../images/chart-view.png) no-repeat 28px 0;
+  
+}
+.chart {
+  background:url(../images/chart-view.png) no-repeat 28px -22px;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+        <div id="charttoggle-tab3" class="tab">
+            <p>
+                <pre class="language-javascript">
+                    <code>
+  // Toggle for Chart-table view
+  $(".charttoggle").click(function(){
+    $(this).toggleClass("chart"); return false;
+  }); 
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab3-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+<!-- *******************  Edit By Toggle *********************-->
             <p>
             <p><strong>Edit By Toggle</strong></p>
             <div class="targtoggle"><span class="label">Edit by</span></div>
           </p>
 
-<pre class="language-markup"><code>
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#targtoggle-tab1">HTML</a></li>
+        <li><a href="#targtoggle-tab2">CSS</a></li>
+        <li><a href="#targtoggle-tab3">JavaScript</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="targtoggle-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
 &lt;div class="targtoggle"&gt;
-&lt;span class="label"&gt;
-&lt;/span&gt;&lt;/div&gt;
-</code>
-</pre>
+  &lt;span class="label"&gt;
+    Edit By
+  &lt;/span&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="targtoggle-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.targtoggle {
+  height: 17px;
+  width: 110px;
+  cursor:pointer;
+  background:url(../images/targ-toggle.png) no-repeat 42px 0;
+}
 
+.percent {
+  background:url(../images/targ-toggle.png) no-repeat 42px -17px;
+}
 
+.targtoggle span, .charttoggle span {
+  font-weight: normal;
+}
 
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+        <div id="targtoggle-tab3" class="tab">
+            <p>
+                <pre class="language-javascript">
+                    <code>
+  // Toggle for Target ammount
+  $(".targtoggle").click(function(){
+    $(this).toggleClass("percent"); return false;
+  }); 
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab3-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************  ExpandandCollapseAllToggle- *********************-->
           <p>
             <p><strong>Expand and Collapse All Toggle</strong></p>
             <br><br><br>
@@ -530,12 +855,77 @@ View
                 <hr/>
             
         </div> <!--x sortline -->
-<pre class="language-markup"><code>
-&lt;div class="expand"&gt;&lt;span class="icon-plus"&gt;&lt;/span&gt;EXPAND ALL&lt;/div&gt;
-&lt;div class="collapse hide"&gt;&lt;span class="icon-minus"&gt;&lt;/span&gt;COLLAPSE ALL&lt;/div&gt;
-</code>
-</pre>
 
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#ExpandandCollapseAllToggle-tab1">HTML</a></li>
+        <li><a href="#ExpandandCollapseAllToggle-tab2">CSS</a></li>
+        <li><a href="#ExpandandCollapseAllToggle-tab3">JavaScript</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="ExpandandCollapseAllToggle-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div class="ttoggle sort">
+  &lt;div class="expand"&gt;
+    &lt;span class="icon-plus"&gt;&lt;/span&gt;
+      EXPAND ALL
+  &lt;/div&gt;
+  &lt;div class="collapse hide"&gt;
+    &lt;span class="icon-minus"&gt;&lt;/span&gt;
+    COLLAPSE ALL
+  &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="ExpandandCollapseAllToggle-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.hide { display:none; }
+
+a.icon.expand span {
+  background:url(../images/expand.png) no-repeat;
+  padding-left: 12px;
+}
+
+a.icon.collapse span {
+  background:url(../images/collapse.png) no-repeat;
+  padding-left: 12px;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+        <div id="ExpandandCollapseAllToggle-tab3" class="tab">
+            <p>
+                <pre class="language-javascript">
+                    <code>
+
+   $('.ttoggle').click(function() {
+     $(this).find('.expand, .collapse').toggleClass('hide');
+    });
+  
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab3-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+
+
+<!-- *******************  FAIDToggle- *********************-->
   
         <p>
             <p><strong>FAID Toggles</strong></p>
@@ -612,16 +1002,76 @@ View
                     </table>
                     
           </div><!--x faid-detail -->
-            </p>
+        </p>
 
-<pre class="language-markup"><code>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#FAIDToggle-tab1">HTML</a></li>
+        <li><a href="#FAIDToggle-tab2">CSS</a></li>
+        <li><a href="#FAIDToggle-tab3">JavaScript</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="FAIDToggle-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
  &lt;div class="faid-toggle"&gt;     
         &lt;span class="icon-plus hide"&gt;&lt;/span&gt;
         &lt;span class="icon-minus"&gt;&lt;/span&gt;
         &lt;a href="#"&gt;FAID 1234&lt;/a&gt;  
   &lt;/div&gt;
-</code>
-</pre>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="FAIDToggle-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+
+.faid-toggle a{
+  text-decoration: none;
+  color: #556996;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.faid-toggle .icon-plus, .faid-toggle .icon-minus {
+  color: #566996;
+}
+
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+        <div id="FAIDToggle-tab3" class="tab">
+            <p>
+                <pre class="language-javascript">
+                    <code>
+  // Toggle for FAID detail
+  
+  $(".faid-toggle").click(function(){
+    $(this).find('.icon-plus, .icon-minus').toggleClass('hide');
+    $(".faid-detail").slideToggle("slow");
+    $(this).toggleClass("active"); return false;
+    
+  }); 
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab3-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+
 
 
 </div><!--/row -->
