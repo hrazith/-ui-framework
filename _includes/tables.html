@@ -7,7 +7,7 @@
 
 <p>Here is a table that sorts the columns in ascending and descending order. Add the "sortable" class to the table</p>
 
-<table id="table" class="sortable">
+<table id="table" class="sortable datagrid">
     <thead>
       <tr>
         <th class="nosort">ID</th>
@@ -81,18 +81,73 @@
   </script>
 
 
-<h3>The CSS:</h3>
-<pre class="prettyprint">
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SortingTable-tab1">HTML</a></li>
+        <li><a href="#SortingTable-tab2">CSS</a></li>
+        <li><a href="#SortingTable-tab3">JavaScript</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SortingTable-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+                      <!--HTML-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SortingTable-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+
+.datagrid {
+  border-collapse: collapse;
+}
+
+.datagrid thead tr th {
+  color: #949494;
+  font-size: 11px;
+  font-weight: normal;
+  text-align: left;
+  padding: 6px 8px;
+  border: 1px solid #c9c9c9;
+  background-image: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background-image: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background-image: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background-image: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9)); 
+}
+.datagrid tbody tr {
+  background: #fff;
+}
+
+.datagrid tbody tr td {
+  padding: 6px 8px;
+  border: 1px solid #c9c9c9;
+}
+
+
+.datagrid tbody tr td.cash {
+  text-align: right;
+}
+
+
 .sortable .head {
-  background:url(../images/sort.gif) left no-repeat; 
   cursor:pointer; 
   padding-left: 10px}
 .sortable .desc {
-  background:url(../images/desc.gif) left no-repeat; 
+  background:url(../images/desc.png) right no-repeat; 
   cursor:pointer;
   padding-left: 10px}
 .sortable .asc  {
-  background:url(../images/asc.gif) left no-repeat; 
+  background:url(../images/asc.png) right no-repeat; 
   cursor:pointer;
   padding-left: 10px}
 .sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color:#000}
@@ -100,27 +155,26 @@
 .sortable .oddrow td {background:#ecf2f6}
 .sortable td.evenselected {background:#ecf2f6}
 .sortable td.oddselected {background:#dce6ee}
-</pre>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+        <div id="SortingTable-tab3" class="tab">
+            <p>
+                <pre class="language-javascript">
+                    <code>
 
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab3-->
 
-<h3>The JS:</h3>
-<pre class="prettyprint">
-&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-var sorter = new TINY.table.sorter("sorter");
-  sorter.head = "head";
-  sorter.asc = "asc";
-  sorter.desc = "desc";
-  sorter.even = "evenrow";
-  sorter.odd = "oddrow";
-  sorter.evensel = "evenselected";
-  sorter.oddsel = "oddselected";
-  sorter.paginate = true;
-  sorter.currentid = "currentpage";
-  sorter.limitid = "pagelimit";
-  sorter.init("table",1);
-&lt;/script&gt;
-</pre>
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
 
 
  <h3>Data Grid</h3>

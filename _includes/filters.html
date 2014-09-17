@@ -4,43 +4,72 @@
 
 <h3>Custom Filter Panel</h3>
             
-            <div class="custom-filter-panel">
-            	STRATEGY
-                <br/>
-                <br>
-                <button class="dropdown" role="button">
-                	Core
-                </button>
-                <br/>
-                <button class="dropdown" role="button">
-                	Risk Category
-                </button>
-            </div><!--x custom-filter-panel -->
+<div class="filters">
             
-             <div class="custom-filter">
-            	<strong>Select 100% Allocation</strong>
-                <br/>
-                <input type="radio" id="r1" name="allocation" />
-            	<label for="r1"><span></span>None</label>
-                <br>
-  				<input type="radio" id="r2" name="allocation" />
-            	<label for="r2"><span></span>Equity</label>
-                <br>
-                <input type="radio" id="r3" name="allocation" />
-            	<label for="r3"><span></span>Fixed Income</label>
-                <hr>
-            </div><!--x custom-filter -->
+    <fieldset>
+        <form action="#" method="post" accept-charset="utf-8" class="example_form">
+            <table>
+                <tr>
+                    <th><span class="label">REGION</span></th>
+                    <th><span class="label">DIVISION</span></th>
+                    <th><span class="label">COMPLEX</span></th>
+                    <th><span class="label">BRANCH</span></th>
+                    <th><span class="label">DATE</span></th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="region" class="default" tabindex="2">
+                            <option value="">Region 1</option>
+                            <option value="AU">Australia</option>
+                            <option value="CA">Canada</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="division" class="default" tabindex="2">
+                            <option value="">Division 1</option>
+                            <option value="AU">Australia</option>
+                            <option value="CA">Canada</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="complex" class="default" tabindex="2">
+                            <option value="">Complex 1</option>
+                            <option value="AU">Australia</option>
+                            <option value="CA">Canada</option>
+                            <option value="DE">Germany</option>
+                            <option value="JP">Japan</option>
+                        </select>
+                    </td>
+                    <td>
+                         <select name="branch" class="default" tabindex="2">
+                            <option value="">Branch 1</option>
+                            <option value="AU">Australia</option>
+                            <option value="CA">Canada</option>
+                            <option value="DE">Germany</option>
+                            <option value="JP">Japan</option>
+                        </select>
+                    </td>
+                    <td>
+                         <select name="date" class="default" tabindex="2">
+                            <option value="">mm/dd/yy</option>
+                            <option value="AU">Australia</option>
+                            <option value="CA">Canada</option>
+                            <option value="DE">Germany</option>
+                            <option value="JP">Japan</option>
+                        </select>
+                    </td>
+                    <td><a class="button secondary">Go</a></td>
+                </tr>
+             </table>
             
-            <div class="custom-filter">
-            	<strong>Tax Awareness?</strong>
-                <br/>
-                <input type="radio" id="r4" name="tax" />
-            	<label for="r4"><span></span>Yes</label>
-                <br>
-                <input type="radio" id="r5" name="tax" />
-            	<label for="r5"><span></span>No</label>
-                <hr>
-            </div><!--x custom-filter -->
+          </form>
+    </fieldset>        
+            
+</div>
+       
 
 
 <br>

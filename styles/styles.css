@@ -195,7 +195,7 @@ div.col12 { width: 978px; }*/
 .sortable th {font-size:10px;padding:6px 8px 8px}
 .sortable td {padding:4px 6px 6px; border-bottom:1px solid #c9c9c9; border-right:1px solid #c9c9c9;}
 .sortable .head {
-	background:url(../images/sort.gif) left no-repeat;
+	background:url(./images/sort.png) right no-repeat;
 	background: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
 	background: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
 	background: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
@@ -204,11 +204,11 @@ div.col12 { width: 978px; }*/
  cursor:pointer;
  padding-left: 10px}
 .sortable .desc {
-	background:url(../images/desc.gif) left no-repeat; 
+	background:url(../images/desc.png) right no-repeat;
 	cursor:pointer;
 	padding-left: 10px}
 .sortable .asc  {
-	background:url(../images/asc.gif)  left no-repeat; 
+	background:url(../images/asc.png)  right no-repeat; 
 	cursor:pointer;
 	padding-left: 10px}
 .sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color:#000}

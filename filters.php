@@ -10,7 +10,10 @@
 <link rel="stylesheet" href="styles/ir-styles.css" />
 <link rel="stylesheet" href="styles/styles.css" />
 <link rel="stylesheet" href="styles/UIframwork.css" />
+<link rel="stylesheet" href="styles/collections/dropkick.css" />
+<link rel="stylesheet" href="styles/collections/filters.css" />
 <link rel="stylesheet" href="styles/prism.css" />
+
 
     <!-- Loading UBS Javascript--> 
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
