@@ -173,3 +173,10 @@ ol.linenums li {
         .tab.active {
             display:block;
         }
+
+        .titlebar h1 {
+color: #556696;
+padding: 24px 0px 24px 12px;
+font-size: 24px;
+font-weight: bold;
+}
