@@ -176,7 +176,6 @@ ol.linenums li {
 
         .titlebar h1 {
 color: #21354f;
-padding: 24px 0px 24px 12px;
 font-size: 24px;
 font-weight: bold;
 }
@@ -189,7 +188,8 @@ links table
   border: 1px solid;}
 
   .linksTable th{
-font-size: 25px;
+background-color: #2e2e2e;
+color: #ffffff;
 
 }
 
