@@ -30,7 +30,7 @@ p { max-width: 810px; color:#999; }
 	border: 1px red solid;
 }
 
-h2 { margin-top: 60px; }
+h2 { /*margin-top: 60px; */color: #21354f; }
 div h3 { margin-top: 30px; }
 
 .subdue {color:#777;}
