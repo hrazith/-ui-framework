@@ -173,7 +173,6 @@ div.col12 { width: 978px; }*/
 	white-space: nowrap;}
 
 	.sortable:after {
-			content: "";
 		   display: inline-block;
 		   width: 0;
 		   height: 0;
