@@ -1,0 +1,325 @@
+<h3>Sorting Table</h3>
+
+<p>Here is a table that sorts the columns in ascending and descending order. Add the "sortable" class to the table</p>
+
+<table id="table" class="sortable">
+    <thead>
+      <tr>
+        <th class="nosort">ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Zip</th>
+        <th>Birthdate</th>
+        <th>Last Access</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Ezekiel Hart</td>
+        <td>(627) 536-4760</td>
+        <td><a href="mailto:#">tortor@est.ca</a></td>
+        <td>53082</td>
+        <td>12/02/1962</td>
+        <td>March 26, 2009</td>
+        <td>-7</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jaquelyn Pace</td>
+        <td>(921) 943-5780</td>
+        <td><a href="mailto:#">in@elementum.org</a></td>
+        <td>46789</td>
+        <td>06/03/1957</td>
+        <td>October 20, 2006</td>
+        <td>-7</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lois Pickett</td>
+        <td>(835) 361-5993</td>
+        <td><a href="mailto:#">arcu.ac@disse.ca</a></td>
+        <td>9814</td>
+        <td>10/15/1983</td>
+        <td>June 01, 1999</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Keane Raymond</td>
+        <td>(605) 803-1561</td>
+        <td><a href="mailto:#">at.risus.Nunc@ipsum.com</a></td>
+        <td>97129</td>
+        <td>07/30/1982</td>
+        <td>July 24, 1996</td>
+        <td>5</td>
+      </tr>
+    </tbody>
+</table>
+        
+  <!--used in css-->      
+  <script type="text/javascript">
+  var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+  </script>
+
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SortingTable-tab1">HTML</a></li>
+        <li><a href="#SortingTable-tab2">CSS</a></li>
+        <li><a href="#SortingTable-tab3">JavaScript</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SortingTable-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;table id="table" class="sortable">
+    &lt;thead>
+      &lt;tr>
+        &lt;th class="nosort">ID&lt;/th>
+        &lt;th>Name&lt;/th>
+        &lt;th>Phone&lt;/th>
+        &lt;th>Email&lt;/th>
+        &lt;th>Zip&lt;/th>
+        &lt;th>Birthdate&lt;/th>
+        &lt;th>Last Access&lt;/th>
+        &lt;th>Rating&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>1&lt;/td>
+        &lt;td>Ezekiel Hart&lt;/td>
+        &lt;td>(627) 536-4760&lt;/td>
+        &lt;td>&lt;a href="mailto:#">tortor@est.ca&lt;/a>&lt;/td>
+        &lt;td>53082&lt;/td>
+        &lt;td>12/02/1962&lt;/td>
+        &lt;td>March 26, 2009&lt;/td>
+        &lt;td>-7&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>2&lt;/td>
+        &lt;td>Jaquelyn Pace&lt;/td>
+        &lt;td>(921) 943-5780&lt;/td>
+        &lt;td>&lt;a href="mailto:#">in@elementum.org&lt;/a>&lt;/td>
+        &lt;td>46789&lt;/td>
+        &lt;td>06/03/1957&lt;/td>
+        &lt;td>October 20, 2006&lt;/td>
+        &lt;td>-7&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>3&lt;/td>
+        &lt;td>Lois Pickett&lt;/td>
+        &lt;td>(835) 361-5993&lt;/td>
+        &lt;td>&lt;a href="mailto:#">arcu.ac@disse.ca&lt;/a>&lt;/td>
+        &lt;td>9814&lt;/td>
+        &lt;td>10/15/1983&lt;/td>
+        &lt;td>June 01, 1999&lt;/td>
+        &lt;td>4&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>4&lt;/td>
+        &lt;td>Keane Raymond&lt;/td>
+        &lt;td>(605) 803-1561&lt;/td>
+        &lt;td>&lt;a href="mailto:#">at.risus.Nunc@ipsum.com&lt;/a>&lt;/td>
+        &lt;td>97129&lt;/td>
+        &lt;td>07/30/1982&lt;/td>
+        &lt;td>July 24, 1996&lt;/td>
+        &lt;td>5&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+&lt;/table>
+        
+  &lt;!--used in css-->      
+  &lt;script type="text/javascript">
+  var sorter = new TINY.table.sorter("sorter");
+  sorter.head = "head";
+  sorter.asc = "asc";
+  sorter.desc = "desc";
+  sorter.even = "evenrow";
+  sorter.odd = "oddrow";
+  sorter.evensel = "evenselected";
+  sorter.oddsel = "oddselected";
+  sorter.paginate = true;
+  sorter.currentid = "currentpage";
+  sorter.limitid = "pagelimit";
+  sorter.init("table",1);
+  &lt;/script>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SortingTable-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+
+.sortable thead tr th {
+  color: #949494;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: left;
+  padding: 6px 8px;
+  border: 1px solid #c9c9c9;
+  background: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9)); 
+}
+
+.sortable tbody tr td {
+  padding: 6px 8px;
+  border: 1px solid #c9c9c9;
+  white-space: nowrap;}
+
+  .sortable:after {
+       display: inline-block;
+       width: 0;
+       height: 0;
+       border-top: 4px solid #556996;
+       border-left: 4px solid transparent;
+       border-right: 4px solid transparent;
+       margin: 0 0 0 4px;
+       position: relative;
+       top: -1px;
+}
+.sortable:hover:after, .selected.sortable:after{
+    border-top: 4px solid #fff;
+
+}
+  
+.sortable {border-left:1px solid #c9c9c9; border-top:1px solid #c9c9c9; border-bottom:none; margin:0 auto 15px}
+.sortable th {text-align:left;color:#cfdce7; border:1px solid #fff; border-right:none}
+.sortable th {font-size:10px;padding:6px 8px 8px}
+.sortable td {padding:4px 6px 6px; border-bottom:1px solid #c9c9c9; border-right:1px solid #c9c9c9;}
+.sortable .head {
+  background: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9));
+ cursor:pointer;
+ padding-left: 10px}
+.sortable .desc {
+  background:url(../images/desc.png) right no-repeat;
+  cursor:pointer;
+  padding-left: 10px}
+.sortable .asc  {
+  background:url(../images/asc.png)  right no-repeat; 
+  cursor:pointer;
+  padding-left: 10px}
+.sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color:#000}
+.sortable .evenrow td {background:#fff}
+.sortable .oddrow td {background:#ecf2f6}
+.sortable td.evenselected {background:#ecf2f6}
+.sortable td.oddselected {background:#dce6ee}
+
+#controls {width:980px; margin:0 auto; height:20px}
+#perpage {float:left; width:200px}
+#perpage select {float:left; font-size:11px}
+#perpage span {float:left; margin:2px 0 0 5px}
+#navigation {float:left; width:580px; text-align:center}
+#navigation img {cursor:pointer}
+#text {float:left; width:200px; text-align:right; margin-top:2px}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+        <div id="SortingTable-tab3" class="tab">
+            <p>
+                <pre class="language-javascript">
+                    <code>
+var TINY={};
+
+function T$(i){return document.getElementById(i)}
+function T$$(e,p){return p.getElementsByTagName(e)}
+
+TINY.table=function(){
+  function sorter(n){this.n=n; this.pagesize=20; this.paginate=0}
+  sorter.prototype.init=function(e,f){
+    var t=ge(e), i=0; this.e=e; this.l=t.r.length; t.a=[];
+    t.h=T$$('thead',T$(e))[0].rows[0]; t.w=t.h.cells.length;
+    for(i;i&lt;t.w;i++){
+      var c=t.h.cells[i];
+      if(c.className!='nosort'){
+        c.className=this.head; c.onclick=new Function(this.n+'.wk(this.cellIndex)')
+      }
+    }
+    for(i=0;i&lt;this.l;i++){t.a[i]={}}
+    if(f!=null){var a=new Function(this.n+'.wk('+f+')'); a()}
+    if(this.paginate){this.g=1; this.pages()}
+  };
+  sorter.prototype.wk=function(y){
+    var t=ge(this.e), x=t.h.cells[y], i=0;
+    for(i;i&lt;this.l;i++){
+      t.a[i].o=i; var v=t.r[i].cells[y]; t.r[i].style.display='';
+      while(v.hasChildNodes()){v=v.firstChild}
+      t.a[i].v=v.nodeValue?v.nodeValue:''
+    }
+    for(i=0;i&lt;t.w;i++){var c=t.h.cells[i]; if(c.className!='nosort'){c.className=this.head}}
+    if(t.p==y){t.a.reverse(); x.className=t.d?this.asc:this.desc; t.d=t.d?0:1}
+    else{t.p=y; t.a.sort(cp); t.d=0; x.className=this.asc}
+    var n=document.createElement('tbody');
+    for(i=0;i&lt;this.l;i++){
+      var r=t.r[t.a[i].o].cloneNode(true); n.appendChild(r);
+      r.className=i%2==0?this.even:this.odd; var cells=T$$('td',r);
+      for(var z=0;z&lt;t.w;z++){cells[z].className=y==z?i%2==0?this.evensel:this.oddsel:''}
+    }
+    t.replaceChild(n,t.b); if(this.paginate){this.size(this.pagesize)}
+  };
+  sorter.prototype.page=function(s){
+    var t=ge(this.e), i=0, l=s+parseInt(this.pagesize);
+    if(this.currentid&&this.limitid){T$(this.currentid).innerHTML=this.g}
+    for(i;i&lt;this.l;i++){t.r[i].style.display=i>=s&&i&lt;l?'':'none'}
+  };
+  sorter.prototype.move=function(d,m){
+    var s=d==1?(m?this.d:this.g+1):(m?1:this.g-1);
+    if(s&lt;=this.d&&s>0){this.g=s; this.page((s-1)*this.pagesize)}
+  };
+  sorter.prototype.size=function(s){
+    this.pagesize=s; this.g=1; this.pages(); this.page(0);
+    if(this.currentid&&this.limitid){T$(this.limitid).innerHTML=this.d}
+  };
+  sorter.prototype.pages=function(){this.d=Math.ceil(this.l/this.pagesize)};
+  function ge(e){var t=T$(e); t.b=T$$('tbody',t)[0]; t.r=t.b.rows; return t};
+  function cp(f,c){
+    var g,h; f=g=f.v.toLowerCase(), c=h=c.v.toLowerCase();
+    var i=parseFloat(f.replace(/(\$|\,)/g,'')), n=parseFloat(c.replace(/(\$|\,)/g,''));
+    if(!isNaN(i)&&!isNaN(n)){g=i,h=n}
+    i=Date.parse(f); n=Date.parse(c);
+    if(!isNaN(i)&&!isNaN(n)){g=i; h=n}
+    return g>h?1:(g&lt;h?-1:0)
+  };
+  return{sorter:sorter}
+}();
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab3-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
