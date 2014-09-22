@@ -31,7 +31,6 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/typeahead.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
     <script src="js/application.js"></script>
   </body>
 </html>

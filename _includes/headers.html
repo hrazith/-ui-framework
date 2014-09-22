@@ -1,6 +1,78 @@
 <div class="row">
     <h1>Headers</h1>  
 
+
+
+<!-- ********************************************************
+                    Application headings
+**********************************************************-->
+
+
+    <h3> H1</h3>
+    <p>
+    These h1 tag title bar headings. They are displayed at the top row of the page, and tend to be the name of the application. The h1's are clickable, and link back to the home page of it's application.
+    </p>
+<br>
+
+H1
+<span class="titlebar"><h1>Financial Planning Fees</h1></span>
+<br>
+H1 link
+<span class="titlebar"><h1><a href="#">Financial Planning Fees</a></h1></span>
+
+<br>
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#titlebar-tab1">HTML</a></li>
+        <li><a href="#titlebar-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="titlebar-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div class="titlebar">
+&lt;h1>Financial Planning Fees&lt;/h1>
+&lt;/div>
+
+&lt;div class="titlebar">
+&lt;h1>&lt;a href="#">Financial Planning Fees&lt;/a>&lt;/h1>
+&lt;/div>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="titlebar-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.titlebar h1 {
+color: #21354f;
+padding: 24px 0px 24px 12px;
+font-size: 24px;
+font-weight: bold;
+}
+
+.titlebar a:hover{
+border-bottom: none;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
 <!-- ********************************************************
                     Top Nav
 **********************************************************-->
