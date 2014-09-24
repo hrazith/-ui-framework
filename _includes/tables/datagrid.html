@@ -92,7 +92,77 @@
             <p>
                 <pre class="language-markup">
                     <code>
-                      <!--HTML-->
+&lt;table class="ir-datagrid">
+          &lt;!-- Table header -->
+            &lt;thead>
+                    &lt;tr>
+                        &lt;th scope="col" id="...">Description&lt;/th>
+                        &lt;th scope="col" id="...">Symbol&lt;/th>
+                        &lt;th scope="col" id="...">Current Value&lt;/th>
+                        &lt;th scope="col" id="...">Current %&lt;/th>
+                        &lt;th scope="col" id="...">Target $&lt;/th>
+                        &lt;th scope="col" id="...">Target %&lt;/th>
+                        &lt;th scope="col" id="...">Net Change&lt;/th>
+                        &lt;th scope="col" id="...">- &lt;/th>
+                
+                    &lt;/tr>
+      &lt;/thead>
+              
+            &lt;!-- Table footer -->
+                &lt;tfoot>
+                    &lt;tr>
+                        &lt;td>&nbsp;&lt;/td>
+                        &lt;td>&nbsp;&lt;/td>
+                        &lt;td>&nbsp;&lt;/td>
+                        &lt;td>Cash UBS Bank&lt;/td>
+                    &lt;/tr>
+                &lt;/tfoot>
+            
+            &lt;!-- Table body -->
+                &lt;tbody>
+                    &lt;tr>
+                        &lt;td>Cash UBS Bank&lt;/td>
+                        &lt;td>PVFAX&lt;/td>
+                        &lt;td class="cash">$95,862.93&lt;/td>
+                        &lt;td class="cash">12.93%&lt;/td>
+                        &lt;td class="cash">$3,330,030,340.33&lt;/td>
+                        &lt;td class="cash">32.43%&lt;/td>
+                        &lt;td class="cash">2.13%&lt;/td>
+                        &lt;td class="icon-Delete">&lt;/td>
+                    &lt;/tr>
+                    &lt;tr>
+                        &lt;td>SPDR S&P EFT&lt;/td>
+                        &lt;td>SPEFT&lt;/td>
+                        &lt;td class="cash">$4,562.12&lt;/td>
+                        &lt;td class="cash">6.23%&lt;/td>
+                        &lt;td class="cash">$1,030,040,360.13&lt;/td>
+                        &lt;td class="cash">13.29%&lt;/td>
+                        &lt;td class="cash">2.93%&lt;/td>
+                        &lt;td class="icon-Delete">&nbsp;&lt;/td>
+                    &lt;/tr>
+                       &lt;tr>
+                        &lt;td>Mutual Funds&lt;/td>
+                        &lt;td>MFT&lt;/td>
+                        &lt;td class="cash">$33,532.12&lt;/td>
+                        &lt;td class="cash">5.43%&lt;/td>
+                        &lt;td class="cash">$330,040,360.13&lt;/td>
+                        &lt;td class="cash">33.29%&lt;/td>
+                        &lt;td class="cash">2.43%&lt;/td>
+                        &lt;td class="icon-Delete">&nbsp;&lt;/td>
+                    &lt;/tr>
+                     &lt;tr class="recent">
+                        &lt;td>Paradigm Value FUND .. &lt;/td>
+                        &lt;td>PVFAX&lt;/td>
+                        &lt;td class="cash">$23,862.93&lt;/td>
+                        &lt;td class="cash">12.93%&lt;/td>
+                        &lt;td class="cash">$2,032,020,320.23&lt;/td>
+                        &lt;td class="cash">12.93%&lt;/td>
+                        &lt;td class="cash">2.93%&lt;/td>
+                        &lt;td class="icon-Delete">&nbsp;&lt;/td>
+                    &lt;/tr>
+            
+                &lt;/tbody>
+      &lt;/table>
                     </code>
                 </pre>
             </p>
@@ -102,7 +172,45 @@
             <p>
                 <pre class="language-css">
                     <code>
-                      <!--CSS-->
+.ir-datagrid {
+    min-width: 810px;
+    border-collapse: collapse;
+    font-size: 11px;
+
+}
+
+.ir-datagrid tbody {
+    background-color:#fff;
+}
+
+.ir-datagrid thead {
+    color: #949494;
+    font-size: 11px;
+    font-weight: normal;
+    height: 22px;
+    text-align:left;
+    background-image: linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+    background-image: -moz-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+    background-image: -webkit-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+    background-image: -ms-linear-gradient(bottom, #EEEFF1 50%, #F9F9F9 54%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #EEEFF1), color-stop(0.54, #F9F9F9));
+}
+
+.ir-datagrid th, .ir-datagrid td {
+    padding: 3px 6px;
+    border: 1px #949494 solid;
+    /*text-align: right;*/
+}
+
+.ir-datagrid tfoot td {
+    border:none; 
+    
+}
+
+td.cash {
+     text-align:right;
+}
+
                     </code>
                 </pre>
             </p>
@@ -112,7 +220,16 @@
             <p>
                 <pre class="language-javascript">
                     <code>
-                      <!--Javascript-->
+// Delete Row
+    $(".icon-Delete").on("click",function() {
+        var tr = $(this).closest('tr');
+        tr.css("background-color","#ffa68e");
+
+        tr.fadeOut(400, function(){
+            tr.remove();
+        });
+      return false;
+    });
                     </code>
                 </pre>
             </p>
