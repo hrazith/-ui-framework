@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/ir-styles.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/UIframwork.css" />
-    <link rel="stylesheet" href="styles/iconstyle.css" />
     <link rel="stylesheet" href="styles/prism.css" />
 
 
@@ -27,30 +26,8 @@
     <?php include("_includes/nav.html");?>
 
     <?php include("_includes/index.html");?>
-    <br><br><br>
+    <br><br>
     <?php include("_includes/customwork.html");?>
-    <br><br><br>
-    <?php include("_includes/colorpalette.html");?>
-    <br><br><br>
-    <?php include("_includes/typography.html");?>
-    <br><br><br>
-    <?php include("_includes/headers.html");?>
-    <br><br><br>
-    <?php include("_includes/footers.html");?>
-    <br><br><br>
-    <?php include("_includes/tables.html");?>
-    <br><br><br>
-    <?php include("_includes/filters.html");?>
-    <br><br><br>
-    <?php include("_includes/megamenus.html");?>
-    <br><br><br>
-    <?php include("_includes/containers.html");?>
-    <br><br><br>
-    <?php include("_includes/buttons.html");?>
-    <br><br><br>
-    <?php include("_includes/icons.html");?>
-
-
 
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-1.8.3.min.js"></script>
