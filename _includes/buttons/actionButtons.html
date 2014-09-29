@@ -1,0 +1,201 @@
+<!-- *******************************************************
+                ActionButtons-
+**********************************************************-->
+<h3>Action Buttons</h3> 
+          <p>
+            <strong>Action</strong> buttons appear in the dialogs or pop-ups.
+          </p>
+           <hr>
+<br>
+          <p>
+            <div class="buttons">
+              <span class="actbtn"><span aria-hidden="true" class="icon-pencil"></span>Rename</span>
+              <span class="actbtn"><span aria-hidden="true" class="icon-remove"></span>Delete</span>
+              <br/><br/>
+              </div><!-- /div.buttons-->
+          </p>
+
+          <div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#ActionButtons-tab1">HTML</a></li>
+        <li><a href="#ActionButtons-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="ActionButtons-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;span class="actbtn"&gt; &lt;span aria-hidden="true" class="icon-pencil"&gt;&lt;/span&gt;
+Rename
+&lt;/span&gt;
+
+&lt;span class="actbtn"&gt; &lt;span aria-hidden="true" class="icon-remove"&gt;&lt;/span&gt;
+Delete
+&lt;/span&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="ActionButtons-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                  <code>
+actbtn {
+  font-weight:bold;
+  font-size:10px;
+  padding: 4px 5px;
+  border: 1px solid #949494;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.actbtn:hover {
+  background-color:#fff;
+  cursor: pointer;
+}
+.actbtn:active {
+  cursor: pointer;
+}
+
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+
+<!-- *******************************************************
+               disabledActionButton-
+**********************************************************-->
+         <div class="buttons">
+              <span class="actbtn disable"><span aria-hidden="true" class="icon-briefcase"></span>Disabled Action Button</span>
+            </div><!-- /div.buttons-->
+          </p>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#disabledActionButton-tab1">HTML</a></li>
+        <li><a href="#disabledActionButton-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="disabledActionButton-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;span class="actbtn disable"&gt; &lt;span aria-hidden="true" class="icon-briefcase"&gt;&lt;/span&gt;
+Disabled Action Button
+&lt;/span&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="disabledActionButton-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.actbtn.disable {
+  color: #bbb;
+  border-color:#bbb;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+               ActionButtonOnPanel-
+**********************************************************-->
+
+          <p>
+            <strong>Action</strong> buttons on dark background
+          </p>
+          <p>
+            <div class="dark">
+              <span class="actbtn onpanel"><span aria-hidden="true" class="icon-disk"></span>Save Selected</span><br/><br/>
+                <span class="actbtn onpanel disabled"><span aria-hidden="true" class="icon-disk"></span>Save (Diasabled)</span>
+            </div>
+          </p>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#ActionButtonOnPanel-tab1">HTML</a></li>
+        <li><a href="#ActionButtonOnPanel-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="ActionButtonOnPanel-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;span class="actbtn onpanel"&gt;&lt;span aria-hidden="true" class="icon-disk"&gt;&lt;/span&gt;
+Save Selected
+&lt;/span&gt;
+
+&lt;span class="actbtn onpanel disabled"&gt;&lt;span aria-hidden="true" class="icon-disk"&gt;&lt;/span&gt;
+Save (Diasabled)
+&lt;/span&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="ActionButtonOnPanel-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.actbtn.onpanel {
+  font-size:11px;
+  color:#ffffff;
+  border: 1px solid #f0f0f0;
+}
+
+.actbtn.onpanel:hover {
+  background-color:#a5b9d1;
+  border: 1px solid #a5b9d1;
+  color:#21354f;
+  cursor: pointer;
+}
+
+.actbtn.onpanel:active {
+  cursor:pointer;
+  margin-top: 1px;
+  background-color:#21354f;
+  border: 1px solid #21354f;
+  color:#ffffff;
+}
+.actbtn.onpanel.disabled {
+  color:#828ea9;
+  border: 1px solid #828ea9;
+}
+
+.actbtn.onpanel.disabled:hover{
+  background:none !important;
+  border: 1px solid #828ea9;
+}
+  
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>

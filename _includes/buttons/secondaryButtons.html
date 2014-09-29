@@ -1,0 +1,222 @@
+<!-- *******************************************************
+                SecondaryButton-
+**********************************************************-->
+ <h3>Secondary Button</h3>  
+          <p>
+            <strong>Secondary</strong> corresponds to a secondary action of workflow. These are usually coupled with a primary action button. There can be more than one secondary actions in a workflow. Add "small" to your &lt;a class&gt; for small buttons
+          </p>
+<hr>
+<br>
+
+
+          <p>
+            <div class="buttons">
+            <a class="button secondary" href="#"><span>Secondary Button</span></a>
+            <a class="button secondary small" href="#"><span>Secondary Small</span></a>
+            </div><!-- /div.buttons-->
+          </p>
+
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SecondaryButton-tab1">HTML</a></li>
+        <li><a href="#SecondaryButton-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SecondaryButton-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;a class="button secondary" href="#"&gt;
+  &lt;span&gt;Secondary Button&lt;/span&gt;
+&lt;/a&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SecondaryButton-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+a.button.secondary {
+  color: #556996;
+  background-image: -moz-linear-gradient(top, #ffffff, #d0d0d0); /* Firefox 3.6 */
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d0d0d0),color-stop(1, #ffffff)); /* Safari & Chrome */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#d0d0d0')"; /* IE8 */
+  text-shadow: none;
+  font-weight: normal;
+}
+a.button.secondary:hover {
+  background: #f0f0f0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0f0f0', endColorstr='#f0f0f0')"; /* IE8 */
+  color: #556996;
+  border-color:#949494;
+}
+
+a.button.secondary:active {
+  background: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#ffffff')"; /* IE8 */
+}
+
+a.button.small {
+  padding: 3px 6px;
+  font-size: 11px;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+                SecondaryButtonDisabled-
+**********************************************************-->
+          <p>
+          <div class="buttons">
+            <a class="button secondary disabled" href="#"><span>Disabled Button</span></a>
+            </div><!-- /div.buttons-->
+          </p>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SecondaryButtonDisabled-tab1">HTML</a></li>
+        <li><a href="#SecondaryButtonDisabled-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SecondaryButtonDisabled-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;a class="button secondary disabled" href="#"&gt;
+  &lt;span&gt;Disabled Button&lt;/span&gt;
+&lt;/a&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SecondaryButtonDisabled-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+a.button.secondary.disabled {
+  color: #ccc;
+  background: #f6f6f6 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f6f6f6', endColorstr='#f6f6f6')"; /* IE8 */
+  border: 1px solid #ddd;
+}
+
+a.button.secondary.disabled:hover {
+  cursor: default;
+}
+
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+<!-- *******************************************************
+                SecondaryForwardButton- to the right
+**********************************************************-->
+          <p>
+          <div class="buttons">
+            <a class="button secondary" href="#"><span>Forward Button</span><span class="icon-button_forward_arrow"></span></a>
+            </div><!-- /div.row buttons-->
+          </p>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SecondaryForwardButton-tab1">HTML</a></li>
+        <li><a href="#SecondaryForwardButton-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SecondaryForwardButton-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;a class="button secondary" href="#"&gt;
+  &lt;span&gt;Forward Button&lt;/span&gt;
+  &lt;span class="icon-button_forward_arrow"&gt;&lt;/span&gt;
+&lt;/a&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SecondaryForwardButton-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+                      <!--CSS-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
+
+
+<!-- *******************************************************
+                SecondaryBackwardButton- to the left
+**********************************************************-->
+          <p>
+          <div class="buttons">
+            <a class="button secondary" href="#"><span class="icon-button_arrow_back"></span><span>Backward Button</span></a>
+            </div><!-- /div. buttons-->
+          </p>
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#SecondaryBackwardButton-tab1">HTML</a></li>
+        <li><a href="#SecondaryBackwardButton-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="SecondaryBackwardButton-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;a class="button secondary" href="#"&gt;
+  &lt;span&gt;Backward Button&lt;/span&gt;
+  &lt;span class="icon-button_arrow_back"&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="SecondaryBackwardButton-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+                      <!--CSS-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
