@@ -8,6 +8,7 @@
     <!-- Loading UBS stylesheets -->
 <link rel="stylesheet" href="styles/global.css" />
 <link rel="stylesheet" href="styles/ir-styles.css" />
+<link rel="stylesheet" href="styles/bmss-styles.css"/>
 <link rel="stylesheet" href="styles/styles.css" />
 <link rel="stylesheet" href="styles/UIframwork.css" />
 <link rel="stylesheet" href="styles/prism.css" />
@@ -17,7 +18,8 @@
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/ir-behaviors.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="scripts/bmss-behaviors.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>m
     <script src="js/prism.js"></script>
   
   </head>
