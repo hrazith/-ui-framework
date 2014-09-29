@@ -1,0 +1,86 @@
+
+<!-- ********************************************************
+                        Sortline-
+**********************************************************-->
+
+        <h3>Sort Line</h3>
+        <p class="spcblo">This is a type of a delimiter that seperates the header section from the body of a screen.</p>
+        <div id="sortline">
+            <h2>ACCOUNTS </h2> <span class="label">as of 04/12/2013</span><a href="#"><span class="label icon-Refresh"></span></a>
+            <div class="right">
+                <div class="targtoggle"><span class="label">Edit by</span></div>
+                <div class="sortby">
+                    <span class="label">Sort by</span>
+                    <button class="dropdown" role="button"> Security </button>
+                </div>
+                <div class="ttoggle sort">
+                    <div class="expand"><span class="icon-plus"></span>EXPAND ALL</div>
+                    <div class="collapse hide"><span class="icon-minus"></span>COLLAPSE ALL</div>
+                </div>
+            </div>
+               
+                <hr/>
+            
+        </div> <!--x sortline -->
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#Sortline-tab1">HTML</a></li>
+        <li><a href="#Sortline-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="Sortline-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div id="sortline"&gt;
+    &lt;h2&gt;ACCOUNTS&lt;/h2&gt; 
+    &lt;span class="label"&gt; as of 04/12/2013&lt;/span&gt; 
+    &lt;a href="#"&gt;
+        &lt;span class="label icon-Refresh"&gt;&lt;/span&gt;
+    &lt;/a&gt; 
+&lt;div&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="Sortline-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+#sortline h2 { color: #21354f; font-size: 12px; font-weight: bold; margin: 0 3px 0 0; display:inline-block;}
+#sortline .label { font-weight: normal;}
+#sortline #refresher{ float: left;}
+#sortline hr { margin:0;}
+.refresher { cursor:pointer; }
+
+#sortline a {
+    text-decoration: none;
+    margin-left: 3px;
+}
+#sortline .right {
+    position:absolute;
+    top: -16px;
+    left: 450px;
+    width: 356px;
+
+}
+
+#sortline .right .targtoggle { float:left; width: 110px; margin-top:6px;  }
+
+#sortline .right .sortby { float:left; width: 130px; margin-left:15px; }
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>

@@ -1,0 +1,74 @@
+
+<!-- ********************************************************
+                    Breadcrumb Nav
+**********************************************************-->
+        <h3>Breadcrumb Nav</h3>
+        <p> This is a persistent element  that appears on top of the dashlet. It serves as navigation. It is not a breadcrumb as no hierarchy is being represented.</p>
+        <ul id="topnav">
+                <li><a href="#"><span class="icon-home"></span>Build Portfolio</a></li>
+                <li> Screener</li> 
+                <li><a href="#">Scratch Pad</a></li>
+        </ul>
+
+<!-- ***************
+topnav Coding Tabs 
+******************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#breadcrumbnav-tab1">HTML</a></li>
+        <li><a href="#breadcrumbnav-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="breadcrumbnav-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;ul id="breadcrumbnav"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span class="icon-home"&gt;&lt;/span&gt;Build Portfolio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Screener&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Scratch Pad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="breadcrumbnav-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#breadcrumb{ 
+    font-weight:bold;
+    color:#949494;
+}
+#breadcrumb li { display:inline; padding-right: 20px;}
+#breadcrumb li:after { content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-right: 1px solid #949494;
+   brder-top: 4px solid #949494;
+   border-bottom: 1em solid #949494;
+   margin: 0 0 0 10px;
+}
+
+#breadcrumb li:last-child:after { display:none; }
+#breadcrumb li a { color:#556996; text-decoration: none; }
+#breadcrumb li a:hover { color:#556996; text-decoration: underline; }
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+<br>
+<br>
