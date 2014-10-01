@@ -1,7 +1,8 @@
         <h3>Top Nav</h3>
-        <p> This is a persistent element that appears on top of the page. It serves as navigation. </p>
+        <p> This is a persistent element that appears on top of the page. It serves as navigation. 
         <hr>
-        <br>
+        </p>
+         
 
 <div class="topnav" >
             <ul>

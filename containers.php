@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Containers - UX Sandbox</title>
+    <title>Containers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading UBS stylesheets -->
 <link rel="stylesheet" href="styles/global.css" />
 <link rel="stylesheet" href="styles/ir-styles.css" />
 <link rel="stylesheet" href="styles/styles.css" />
-<link rel="stylesheet" href="styles/UIframwork.css" />
+<link rel="stylesheet" href="styles/ui-framework.css" />
 <link rel="stylesheet" href="styles/prism.css" />
 
     <!-- Loading UBS Javascript--> 
@@ -23,8 +23,10 @@
   <body>
     
     <?php include("_includes/nav.html");?>
-    <?php include("_includes/containers.html");?>
-
+        
+    <div class="content">
+        <?php include("_includes/containers.html");?>
+    </div>
 
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-1.8.3.min.js"></script>

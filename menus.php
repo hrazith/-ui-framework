@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles/ir-styles.css" />
 <link rel="stylesheet" href="styles/bmss-styles.css"/>
 <link rel="stylesheet" href="styles/styles.css" />
-<link rel="stylesheet" href="styles/UIframwork.css" />
+<link rel="stylesheet" href="styles/ui-framework.css" />
 <link rel="stylesheet" href="styles/prism.css" />
 
 
@@ -26,14 +26,10 @@
   <body>
     
     <?php include("_includes/nav.html");?>
-    <?php include("_includes/menus.html");?>
+    
+    <div class="content">
+        <?php include("_includes/menus.html");?>
+    </div>
 
-
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/typeahead.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
-    <script src="js/application.js"></script>
   </body>
 </html>

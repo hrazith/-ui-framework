@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Buttons - UX Sandbox</title>
+    <title>Buttons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading UBS stylesheets -->
 <link rel="stylesheet" href="styles/global.css" />
 <link rel="stylesheet" href="styles/ir-styles.css" />
 <link rel="stylesheet" href="styles/styles.css" />
-<link rel="stylesheet" href="styles/UIframwork.css" />
+<link rel="stylesheet" href="styles/ui-framework.css" />
 <link rel="stylesheet" href="styles/prism.css" />
 
     <!-- Loading UBS Javascript--> 
@@ -23,17 +23,10 @@
   <body>
     
     <?php include("_includes/nav.html");?>
-    <?php include("_includes/buttons.html");?>
 
-
-
-
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/prism.js"></script>
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/typeahead.js"></script>
-    <script src="js/application.js"></script>
+    <div class="content">
+        <?php include("_includes/buttons.html");?>
+    </div>
 
   </body>
 </html>

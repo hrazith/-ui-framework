@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/ir-styles.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/UIframwork.css" />
+    <link rel="stylesheet" href="styles/ui-framework.css" />
     <link rel="stylesheet" href="styles/prism.css" />
 
 
@@ -22,10 +22,13 @@
   
   </head>
   <body>
-    
-    <?php include("_includes/nav.html");?>
 
-    <?php include("_includes/index.html");?>
+        <?php include("_includes/nav.html");?>
+      
+
+        <div class="content">
+            <?php include("_includes/body.html");?>
+        </div>
 
   </body>
 </html>

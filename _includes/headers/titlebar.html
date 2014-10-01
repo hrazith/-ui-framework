@@ -1,0 +1,81 @@
+<h3>Title Bar</h3>
+    <p>
+    This is the title bar this is displayed at the top of every CW application. Some title bar have links to te right and some do not, but the title bar always has the application name inside the white background at the top of the page.
+    <hr>
+    </p>
+    
+ 
+
+<div class="row titlebar">
+     	<h1>Financial Planning Fees</h1>
+     	<div class="links">
+        <a href="#" class="txtlnk info"><span class="icon-info"></span>What are UBS FAs charging?</a>
+     	 	<a href="#" class="txtlnk announce"><span class="icon-warning"></span>Announcements</a>
+      		<a href="#" class="txtlnk download"><span class="icon-disk"></span>Downloadable Documents</a>
+     	</div>
+  	</div><!--/row -->
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">HTML</a></li>
+        <li><a href="#tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div class="titlebar">
+        &lt;h1>Financial Planning Fees&lt;/h1>
+        &lt;div class="links">
+        &lt;a href="#">What are UBS FAs charging?&lt;/a>
+            &lt;a href="#">Announcements&lt;/a>
+            &lt;a href="#">Downloadable Documents&lt;/a>
+        &lt;/div>
+    &lt;/div>&lt;!--/row -->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.titlebar { 
+  background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #D7D7D7;
+    border-top: 1px solid #D7D7D7;
+    height: 68px;
+    position: relative;
+}
+.titlebar h1 {
+  color: #556996;
+    padding: 10px 0 24px 12px;
+    font-size: 24px;
+}
+
+.titlebar .links {
+  position: absolute;
+  right: 18px;
+  top: 38px;
+}
+.titlebar .links a { margin-left: 10px; padding: 3px 8px;}
+
+.main-content {
+  overflow: auto;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+ 
+ 

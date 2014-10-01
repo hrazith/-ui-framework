@@ -7,18 +7,9 @@
 
     <!-- Loading UBS stylesheets -->
     <link rel="stylesheet" href="styles/global.css" />
-    <!-- 
-    @import 'grids/978gs.css';
-    @import 'grids/simple-gs.css';
-    @import 'elements/buttons.css';
-    @import 'collections/dropkick.css';
-    @import 'collections/tables.css';
-    @import 'collections/menus.css';
-    @import 'collections/filters.css';
-    -->
     <link rel="stylesheet" href="styles/ir-styles.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/UIframwork.css" />
+    <link rel="stylesheet" href="styles/ui-framework.css" />
     <link rel="stylesheet" href="styles/prism.css" />
 
 
@@ -33,8 +24,10 @@
   <body>
     
     <?php include("_includes/nav.html");?>
-    <?php include("_includes/filters.html");?>
 
+    <div class="content">
+        <?php include("_includes/filters.html");?>
+    </div>
 
   </body>
 </html>

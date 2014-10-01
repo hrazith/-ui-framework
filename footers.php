@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="styles/global.css" />
 <link rel="stylesheet" href="styles/ir-styles.css" />
 <link rel="stylesheet" href="styles/styles.css" />
-<link rel="stylesheet" href="styles/UIframwork.css" />
+<link rel="stylesheet" href="styles/ui-framework.css" />
 
     <!-- Loading UBS Javascript--> 
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
@@ -21,14 +21,10 @@
   <body>
     
     <?php include("_includes/nav.html");?>
-    <?php include("_includes/footers.html");?>
 
-
-    <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script src="js/typeahead.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
-    <script src="js/application.js"></script>
+    <div class="content">
+        <?php include("_includes/footers.html");?>
+    </div>
+    
   </body>
 </html>

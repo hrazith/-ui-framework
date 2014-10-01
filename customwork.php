@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/ir-styles.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/UIframwork.css" />
+    <link rel="stylesheet" href="styles/ui-framework.css" />
 
 
     <!-- Loading UBS Javascript--> 
@@ -22,8 +22,10 @@
   <body>
     
     <?php include("_includes/nav.html");?>
-
-    <?php include("_includes/customwork.html");?>
+    
+    <div class="content">
+      <?php include("_includes/customwork.html");?>
+    </div>
 
   </body>
 </html>
