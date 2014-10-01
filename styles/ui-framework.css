@@ -6,7 +6,12 @@ the sandbox, not any of the elements*/
   margin-left: 180px;
   width: 978px;
 }
-p { margin: 20px 0 20px 0;}
+p { margin: 0 0 20px 0;}
+.module { margin-bottom: 80px;}
+.section { 
+  padding: 40px 0 20px 0;
+  border-bottom: 4px dotted #ccc;
+}
 
 /****************************
      Header
