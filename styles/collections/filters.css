@@ -33,7 +33,7 @@ fieldset { border: none; padding:0;}
 }
 
 .filters {
-	background: url('./images/pattern-head-gray.png') repeat 0 0;
+	background: url('../images/pattern-head-gray.png') repeat 0 0;
 	position:relative;
 	overflow: auto;
 }

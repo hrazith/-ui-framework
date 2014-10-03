@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Filters - UX Sandbox</title>
+    <title>Filters</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading UBS stylesheets -->

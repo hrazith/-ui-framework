@@ -19,7 +19,7 @@
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/ir-behaviors.js"></script>
     <script type="text/javascript" src="scripts/bmss-behaviors.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>m
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="js/prism.js"></script>
   
   </head>
