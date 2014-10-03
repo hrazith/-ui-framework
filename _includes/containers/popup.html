@@ -1,0 +1,113 @@
+ <div class="module">
+
+
+ <div class="col4">
+            	<h3>Pop-up</h3>
+                <div id="ir-popup">
+                	<div class="header">
+                    	<h2><span aria-hidden="true" class="icon-remove"></span>Delete Portfolio</h2>
+                    </div>
+                    <hr/>
+                   	<div class="body">
+                     <br/>
+                    	<table>
+                        	<tr>
+                            	<td> <span class="icon-spam" style="font-size:18px; color:#d5600a; "></span></td>
+                              <td>You are about to delete the portfolio #2345 , are you sure? </td>
+                          </tr>
+                        </table>
+                        <br/>
+                  </div>
+                  <div class="footer">
+                     	<a class="button secondary small left" href="#"><span>Cancel</span></a><div> <a class="button small" href="#"><span>Delete</span></a></div>
+                  </div>
+                </div>
+            </div>
+            <div class="row-end">&nbsp;</div>
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#ir-popup-tab1">HTML</a></li>
+        <li><a href="#ir-popup-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="ir-popup-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div id="ir-popup">
+  &lt;div class="header">
+    &lt;h2>
+      &lt;span aria-hidden="true" class="icon-remove">&lt;/span>
+      Delete Portfolio
+    &lt;/h2>
+  &lt;/div>
+    &lt;hr/>
+  &lt;div class="body">
+    &lt;br/>
+    &lt;table>
+      &lt;tr>
+        &lt;td> &lt;span class="icon-spam" style="font-size:18px; color:#d5600a; ">&lt;/span>&lt;/td>
+        &lt;td>You are about to delete the portfolio #2345 , are you sure? &lt;/td>
+      &lt;/tr>
+     &lt;/table>
+     &lt;br/>
+  &lt;/div>
+  &lt;div class="footer">
+    &lt;a class="button secondary small left" href="#">
+      &lt;span>Cancel&lt;/span>
+    &lt;/a>
+    &lt;div> &lt;a class="button small" href="#">
+     &lt;span>Delete&lt;/span>&lt;/a>&lt;/div>
+  &lt;/div>
+&lt;/div>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="ir-popup-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+#ir-modal .header h2, #ir-dialog .header h2, #ir-popup h2 {
+  font-size:12px;
+  font-weight:bold;
+  margin:0;
+  display:inline-block;
+}
+
+#ir-dialog, #ir-popup{
+  background:url(../images/modal-body-texture.png) repeat;
+  -moz-box-shadow:    0px 0px 4px 4px #ccc;
+   -webkit-box-shadow: 0px 0px 4px 4px #ccc;
+   box-shadow:         0px 0px 4px 4px #ccc;
+   -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding:12px;
+  text-align:left;
+}
+
+#ir-dialog .footer, #ir-popup .footer { overflow:auto; }
+#ir-dialog .footer div, #ir-popup .footer div  { float:left; margin-left: 8px; }
+
+#ir-popup {
+  width: 204px;
+}
+
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+
+</div> <!--/module-->
+ 

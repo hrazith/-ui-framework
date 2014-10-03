@@ -1,0 +1,124 @@
+<div class="module">
+
+    	<h3>Main Modal</h3>
+		<div id="ir-modal">
+        	<div class="header"><h2>Build Portfolio</h2><div class="right"><a href="#" class="close"><img src="images/x.png" width="9" height="9" alt=""></a></div></div>
+            <div class="content">.... Body / min-width= 858px .....<img src="images/tansparent.png" width="300" height="100" alt="filler"></div>
+            <div class="footer"><a class="button secondary left" href="#"><span>Back</span></a>  <div class="right"><a class="button" href="#"><span>Next</span></a></div> </div>
+             </div>   <!-- /ir-modal -->
+        
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#ir-modal-tab1">HTML</a></li>
+        <li><a href="#ir-modal-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="ir-modal-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div id="ir-modal"&gt;
+  &lt;div class="header"&gt;
+    &lt;h2&gt;Build Portfolio&lt;/h2&gt;
+      &lt;div class="right"&gt;
+        &lt;a href="#" class="close"&gt;
+          &lt;img src="images/x.png" width="9" height="9" alt="&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="content"&gt;
+    .... Body / min-width= 858px .....
+    &lt;img src="images/tansparent.png" width="300" height="100" alt="filler"&gt;
+  &lt;/div&gt;
+  &lt;div class="footer"&gt;
+    &lt;a class="button secondary left" href="#"&gt;
+      &lt;span&gt;Back&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;div class="right"&gt;
+    &lt;a class="button" href="#"&gt;
+      &lt;span&gt;Next&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="ir-modal-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+#ir-modal{
+  min-width:858px;
+  background:url(../images/modal-body-texture.png) repeat;
+  -moz-box-shadow:    0px 0px 4px 4px #ccc;
+   -webkit-box-shadow: 0px 0px 4px 4px #ccc;
+   box-shadow:         0px 0px 4px 4px #ccc;
+   -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin: 60px auto;
+  min-width:942px;
+  max-width:1250px;
+  width:80%;
+  
+}
+#ir-modal .header, #ir-modal .footer, #ir-modal .body {
+  padding:12px;
+}
+
+#ir-modal .header {
+  background:#FFF;
+   -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  border-bottom: #d7d7d7 1px solid;
+  clear:both;
+}  
+
+#ir-modal .header h2, #ir-dialog .header h2, #ir-popup h2 {
+  font-size:12px;
+  font-weight:bold;
+  margin:0;
+  display:inline-block;
+}
+
+#ir-modal .content {
+  border-top:#fff 1px solid;
+  border-bottom:#fff 1px solid;
+  clear:both;
+  
+}
+
+#ir-modal .footer {
+  background:#FFF;
+   -moz-border-radius:  0 0 4px 4px;
+  -webkit-border-radius:  0 0 4px 4px;
+  border-radius:  0 0 4px 4px;
+  border-top: #d7d7d7 1px solid;
+  overflow:auto;
+}  
+
+#ir-modal div.right, #ir-dialog div.right {
+  float:right;
+}
+
+
+#ir-modal .left {
+  float:left;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+
+</div> <!--/module-->

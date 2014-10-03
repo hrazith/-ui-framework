@@ -1,0 +1,107 @@
+<div class="module">
+
+
+<div class="col8">
+            	<h3>Dialog</h3>
+                <div id="ir-dialog">
+                	<div class="header">
+                    	<h2><span aria-hidden="true" class="icon-sp_full"></span>Create New Portfolio</h2>
+                        <div class="right"><a href="#" class="close"><img src="images/x.png" width="9" height="9" alt=""></a></div>
+                  </div>
+                    <hr/>
+                  <div class="body">
+                         <p class="label">PORTFOLIO NAME: </p>
+                         <input name="" type="text" size="60">
+                  </div>
+                  <div class="footer">
+                     	<a class="button secondary small left" href="#"><span>Cancel</span></a>
+                      <div><a class="button small" href="#"><span>Create</span></a></div>
+                  </div>
+                </div>
+      </div>
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#ir-dialog-tab1">HTML</a></li>
+        <li><a href="#ir-dialog-tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="ir-dialog-tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div id="ir-dialog"&gt;
+  &lt;div class="header"&gt;
+    &lt;h2&gt;&lt;span aria-hidden="true" class="icon-sp_full"&gt;&lt;/span&gt;Create New Portfolio&lt;/h2&gt;
+    &lt;div class="right"&gt;
+      &lt;a href="#" class="close"&gt;&lt;img src="images/x.png" width="9" height="9" alt=""&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;hr/&gt;
+
+  &lt;div class="body"&gt;
+      &lt;p class="label"&gt;PORTFOLIO NAME:&lt;/p&gt;
+      &lt;input name="" type="text" size="60"&gt;
+  &lt;/div&gt;
+
+  &lt;div class="footer"&gt;
+      &lt;pa class="button secondary small left" href="#"&gt;&lt;span&gt;Cancel&lt;/span&gt;&lt;/a&gt;
+      &lt;div&gt;&lt;a class="button small" href="#"&gt;&lt;span&gt;Create&lt;/span&gt;&lt;/a&gt;&lt;/div&gt; 
+  &lt;/div&gt;  
+&lt;/div&gt; 
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="ir-dialog-tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+#ir-modal div.right, #ir-dialog div.right {
+  float:right;
+}
+
+#ir-dialog, #ir-popup{
+  background:url(../images/modal-body-texture.png) repeat;
+  -moz-box-shadow:    0px 0px 4px 4px #ccc;
+   -webkit-box-shadow: 0px 0px 4px 4px #ccc;
+   box-shadow:         0px 0px 4px 4px #ccc;
+   -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding:12px;
+  text-align:left;
+}
+
+#ir-dialog {
+  width:560px;
+}
+
+#ir-dialog .body{
+  margin: 12px 0 20px 0;
+}
+
+#ir-dialog p.label{
+  color:#949494;
+  font-size:10px;
+  font-weight:bold;
+}
+
+#ir-dialog .footer, #ir-popup .footer { overflow:auto; }
+#ir-dialog .footer div, #ir-popup .footer div  { float:left; margin-left: 8px; }
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+    
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+ 
+
+</div> <!--/module-->
