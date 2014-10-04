@@ -1,0 +1,46 @@
+<div class="module">
+<h3>Mortgage Filter</h3>
+<div class="filters" >       
+  <fieldset>
+    <form action="#" method="post" accept-charset="utf-8" class="example_form">
+          <table>
+              <tr>
+                  <th><span class="label">LOAN #</span></th>
+                    <th><span class="label">FAID</span></th>
+                    <th><span class="label">CLIENT LAST NAME</span></th>
+                    <th><span class="label">MORTGAGE REP</span></th>
+                    <th><span class="label">START DATE</span></th>
+                    <th><span class="label">END DATE</span></th>
+                    <th><span class="label">STATUS</span></th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                  <td> <input class="inset-shadow" id="loanref" placeholder="Loan #" value="" name="reference"> </td>
+                  <td> <input class="inset-shadow" id="branch-faid" placeholder="FAID" value="" name="reference">
+                      <input class="chk" type="checkbox" name="splits" value="split"> <span class="label splits">all splits</span> </td>
+                  <td> <input class="inset-shadow" id="borrower" placeholder="Client Last Name" value="" name="reference"> </td>
+                  <td> <input class="inset-shadow" id="coordinator" placeholder="Mortgage Rep" value="" name="reference"> </td>
+                  <td>
+                    <input name="subject" id="start-date" class="texxt shadow1" value="" placeholder="Start Date" />
+                    <span class="icon-calendar"></span>
+                  </td>
+                  <td>
+                    <input name="subject" id="end-date" class="texxt shadow1" value="" placeholder="End Date" />
+                    <span class="icon-calendar"></span>
+                  </td>
+                  <td>
+                    <select name="period" class="default" tabindex="2">
+                      <option value="">All</option>
+                      <option value="AU">Daily</option>
+                      <option value="CA">Monthly</option>
+                    </select>
+                  </td>
+                  <td><a class="button secondary">Go</a></td>
+                  <td><a href="#" class="clear"><span class="icon-cross2"></span>clear</a></td>
+                </tr>
+             </table>
+          </form>
+  </fieldset>       
+</div>
+
+</div> <!--/module-->
