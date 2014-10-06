@@ -22,11 +22,11 @@
                   <td> <input class="inset-shadow" id="coordinator" placeholder="Mortgage Rep" value="" name="reference"> </td>
                   <td>
                     <input name="subject" id="start-date" class="texxt shadow1" value="" placeholder="Start Date" />
-                    <span class="icon-calendar"></span>
+                    <img src="icon_images/calendar_16gray.png">
                   </td>
                   <td>
                     <input name="subject" id="end-date" class="texxt shadow1" value="" placeholder="End Date" />
-                    <span class="icon-calendar"></span>
+                    <img src="icon_images/calendar_16gray.png">
                   </td>
                   <td>
                     <select name="period" class="default" tabindex="2">
@@ -44,3 +44,119 @@
 </div>
 
 </div> <!--/module-->
+
+
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">HTML</a></li>
+        <li><a href="#tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div class="filters" >       
+  &lt;fieldset>
+    &lt;form action="#" method="post" accept-charset="utf-8" class="example_form">
+          &lt;table>
+              &lt;tr>
+                  &lt;th>&lt;span class="label">LOAN #&lt;/span>&lt;/th>
+                    &lt;th>&lt;span class="label">FAID&lt;/span>&lt;/th>
+                    &lt;th>&lt;span class="label">CLIENT LAST NAME&lt;/span>&lt;/th>
+                    &lt;th>&lt;span class="label">MORTGAGE REP&lt;/span>&lt;/th>
+                    &lt;th>&lt;span class="label">START DATE&lt;/span>&lt;/th>
+                    &lt;th>&lt;span class="label">END DATE&lt;/span>&lt;/th>
+                    &lt;th>&lt;span class="label">STATUS&lt;/span>&lt;/th>
+                    &lt;th>&nbsp;&lt;/th>
+                &lt;/tr>
+                &lt;tr>
+                  &lt;td> &lt;input class="inset-shadow" id="loanref" placeholder="Loan #" value="" name="reference"> &lt;/td>
+                  &lt;td> &lt;input class="inset-shadow" id="branch-faid" placeholder="FAID" value="" name="reference">
+                      &lt;input class="chk" type="checkbox" name="splits" value="split"> &lt;span class="label splits">all splits&lt;/span> &lt;/td>
+                  &lt;td> &lt;input class="inset-shadow" id="borrower" placeholder="Client Last Name" value="" name="reference"> &lt;/td>
+                  &lt;td> &lt;input class="inset-shadow" id="coordinator" placeholder="Mortgage Rep" value="" name="reference"> &lt;/td>
+                  &lt;td>
+                    &lt;input name="subject" id="start-date" class="texxt shadow1" value="" placeholder="Start Date" />
+                    &lt;img src="icon_images/calendar_16gray.png">
+                  &lt;/td>
+                  &lt;td>
+                    &lt;input name="subject" id="end-date" class="texxt shadow1" value="" placeholder="End Date" />
+                    &lt;img src="icon_images/calendar_16gray.png">
+                  &lt;/td>
+                  &lt;td>
+                    &lt;select name="period" class="default" tabindex="2">
+                      &lt;option value="">All&lt;/option>
+                      &lt;option value="AU">Daily&lt;/option>
+                      &lt;option value="CA">Monthly&lt;/option>
+                    &lt;/select>
+                  &lt;/td>
+                  &lt;td>&lt;a class="button secondary">Go&lt;/a>&lt;/td>
+                  &lt;td>&lt;a href="#" class="clear">&lt;span class="icon-cross2">&lt;/span>clear&lt;/a>&lt;/td>
+                &lt;/tr>
+             &lt;/table>
+          &lt;/form>
+  &lt;/fieldset> 
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.filters{ 
+    right: 18px;
+    padding: 8px;
+    background: url(../images/pattern-head-gray.png) repeat;
+}
+
+input {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;
+  /*height: 20px;*/
+  padding: 6px 8px;
+  -moz-box-shadow:    inset 0 0 4px #ccc;
+    -webkit-box-shadow: inset 0 0 4px #ccc;
+    box-shadow:         inset 0 0 4px #ccc;
+}
+
+.label {
+  color:#949494;
+  font-size:10px;
+  margin-right:3px;
+}
+
+.inset-shadow { box-shadow: 0 0 2px rgba(68, 68, 68, 0.3) inset; }
+
+#loanref, #branch-faid { width: 100px; }
+#coordinator, #borrower { width: 120px; }
+#start-date, #end-date { width: 70px; }
+
+
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+     
+        <div id="tab3" class="tab">
+            <p>
+                <pre class="language-javascript">
+                    <code>
+                      <!--Javascript-->
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab3-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->

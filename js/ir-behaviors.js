@@ -68,6 +68,5 @@ $(function() {
 		 function ephemeral() {
 			 $('.full').removeClass("ephemeral")
 		 }
-		 
 
 });
