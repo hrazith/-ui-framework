@@ -1,0 +1,79 @@
+<div class="module">
+
+ <h3> Paragraph Styles</h3>
+<p>
+These are default paragraph styles that are displays throughout consult works applications.
+</p>
+
+
+<p>This is the default paragraph</p>
+<p class="footnote">This is a footnote paragraph </p>
+<p class="alerts">This is an Alerts paragraph</p>
+<p class="hot">This is an another Alerts paragraph</p>
+
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">HTML</a></li>
+        <li><a href="#tab2">CSS</a></li>
+
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+                      &lt;p> This is the default paragraph &lt;/p>
+                      &lt;p class="footnote">This is a footnote paragraph &lt;/p>
+                      &lt;p class="alerts">This is an Alerts paragraph &lt;/p>
+                      &lt;p class="hot">This is an another Alerts paragraph&lt;/p>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+p { max-width: 810px; color:#999; font-size: 12px; }
+
+.footnote {
+font-size: 11px;
+color: #949494;
+margin-top: 12px;
+}
+
+.alerts {
+  background-color: #FCF8E3;
+    /*border: 1px solid #FBEED5;*/
+    border: 1px solid #d8c6a6;
+    color: #C09853;
+    padding: 8px 70px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
+}
+.alerts p { margin-top: 4px;}
+
+.hot {color: #e54e4b !important;}
+
+
+
+
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+ 
+ 
+
+
+</div> <!--/module-->

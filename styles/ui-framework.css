@@ -278,3 +278,26 @@ Filters
 .filters .label{
   padding: 2px 0 1px 2px;
 }
+
+
+/*******************************
+          alerts
+*******************************/
+
+.alerts {
+  background-color: #FCF8E3;
+    /*border: 1px solid #FBEED5;*/
+    border: 1px solid #d8c6a6;
+    color: #C09853;
+    padding: 8px 70px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
+}
+.alerts p { margin-top: 4px;}
+
+.footnote {
+font-size: 11px;
+color: #949494;
+margin-top: 12px;}
+
+.hot {color: #e54e4b !important;}

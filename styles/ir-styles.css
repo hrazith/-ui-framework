@@ -1019,6 +1019,7 @@ a.button.small .icon-button_arrow_back {
 ˹ˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉˉ
 */
 
+/*
 .alerts {
 	background: url(../images/flap-bg.png) no-repeat;
 	width: 810px;
@@ -1040,7 +1041,7 @@ a.button.small .icon-button_arrow_back {
 	margin: 5px 0 0 10px !important;
 	display: inline-block;
 	color: #2e2e2e;
-}
+}*/
 
 .exceldownload {
 	background: url(../images/exceldownload.png) 0 0;
