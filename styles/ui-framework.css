@@ -121,6 +121,11 @@ ol.linenums li {
   margin: 0px auto 25px auto;
 }
 
+.background{
+  background-color: rgba(0,0,0,.7);
+  padding: 15px;
+}
+
 
 /**********************
       index 
@@ -244,15 +249,15 @@ Filters
 .search h4 { color:#666;}
 .searchby { font-size: 12px; color:#666; padding-right: 12px;}
 
-.filters{ 
 
+/**************************************************
+             $filters
+**************************************************/
+.filters{ 
     right: 18px;
     padding: 8px;
     background: url(../images/pattern-head-gray.png) repeat;
 }
-/**************************************************
-             $filters
-**************************************************/
 
 #loanref, #branch-faid { width: 100px; }
 #coordinator, #borrower { width: 120px; }
@@ -271,6 +276,5 @@ Filters
 
 
 .filters .label{
-
   padding: 2px 0 1px 2px;
 }
