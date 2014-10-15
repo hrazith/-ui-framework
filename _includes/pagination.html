@@ -8,5 +8,81 @@
 <div class="pagination">
   <p>Page 2 of 2</p>
   <a class="button secondary"><img src="./icon_images/blue_icons/16/triangle-left_16blue.png"></a>
-  <a class="button secondary disabled"><img src="./icon_images/blue_icons/16/triangle-right_16blue.png"></a>
+  <a class="button secondary disabled"><img src="./icon_images/triangle-right_16gray.png"></a>
 </div>
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">HTML</a></li>
+        <li><a href="#tab2">CSS</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;div class="pagination">
+  &lt;p>Page 2 of 2&lt;/p>
+  &lt;a class="button secondary">&lt;img src="./icon_images/blue_icons/16/triangle-left_16blue.png">&lt;/a>
+  &lt;a class="button secondary disabled">&lt;img src="./icon_images/triangle-right_16gray.png">&lt;/a>
+&lt;/div>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+/**************************************************
+             $pagination
+**************************************************/
+
+.pagination {
+  float: right;
+  margin-top: 12px;
+}
+
+.pagination p { 
+  color: #21354F;
+  float: left;
+  padding: 4px 6px;
+}
+
+.pagination .button {
+  padding: 2px 4px;
+}
+
+.pagination .button:nth-of-type(1){
+          border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  /* -moz-border-radius: [top-left] [top-right] [bottom-right] [bottom-left] */
+}
+
+.pagination .button:nth-of-type(2){
+          border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+}
+
+.pagination [class*="icon-"] {
+  font-size: 16px;
+}
+
+.pagination .button:nth-of-type(1).disabled {   border-right: 0; }
+.pagination .button:nth-of-type(2).disabled {   border-left: 0; }
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+ 
