@@ -7,8 +7,8 @@
 
     <!-- Loading UBS stylesheets -->
 <link rel="stylesheet" href="styles/global.css" />
-<link rel="stylesheet" href="styles/ir-styles.css" />
 <link rel="stylesheet" href="styles/styles.css" />
+<link rel="stylesheet" href="styles/ir-styles.css" />
 <link rel="stylesheet" href="styles/ui-framework.css" />
 <link rel="stylesheet" href="styles/prism.css" />
 

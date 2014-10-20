@@ -1,0 +1,144 @@
+
+
+<div class="module">
+
+ <h3>Status</h3>
+<p>
+These are some status styles that appear in different CW apps
+</p>
+
+<p> <span class="hipri">High Priority</span></p>
+<p><span class="change">New</span></p>
+<p>Engagement Type: <span class="alert_status_type">ANNUAL</span></p>
+<p>Profile: 
+    <span class="titlesection">
+        <span class="prp">CONSERVATIVE</span>
+    </span>
+</p>
+
+<p>Engagement Status: 
+    <span class="engmtstatus">
+        <a href="#">Plan in Progress</a>
+    </span>
+</p>
+
+
+
+
+
+<!-- *************************
+        Coding Tabs 
+***************************-->
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">HTML</a></li>
+        <li><a href="#tab2">CSS</a></li>
+
+    </ul>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <p>
+                <pre class="language-markup">
+                    <code>
+&lt;span class="hipri">High Priority&lt;/span>
+
+&lt;span class="change">New&lt;/span>
+
+&lt;span class="alert_status_type">ANNUAL&lt;/span>
+
+&lt;span class="titlesection">&lt;span class="prp">CONSERVATIVE&lt;/span>&lt;/span>
+
+&lt;span class="engmtstatus">&lt;a href="#">Plan in Progress&lt;/a>&lt;/span>
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab1-->
+     
+        <div id="tab2" class="tab">
+            <p>
+                <pre class="language-css">
+                    <code>
+.hipri {
+  background-color:#E54E4B;
+  border: 1px solid #E54E4B;
+  color: #fff !important;
+  font-size: 8.5px;
+  font-weight: bold;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 2px 3px;
+  text-transform:uppercase;
+  margin-left: 3px;
+  white-space: nowrap;
+}
+
+.titlesection .prp {
+    font-size: 8.5px;
+    color:#21354f;
+    cursor:pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #a5b9d1;
+    padding: 2px 3px;
+    margin-right: 8px;   
+}
+
+.alert_status_type {
+    font-weight: bold;
+    color: #fff;
+    background: #21354F;
+    padding: 1px 6px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border: 1px solid #21354f;
+}
+
+.change {
+font-size: 8px !important;
+color: #fff !important;
+fnt-weight: normal !important;
+cursor: pointer;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+background-color: #D5600A;
+padding: 2px 2px;
+text-transform: uppercase;
+margin-left: 3px;
+font-weight: bold;
+}
+
+.engmtstatus a {
+border: 1px solid #556996;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-khtml-border-radius: 3px;
+-webkit-border-radius: 3px;
+padding: 2px 8px;
+color: #556996;
+white-space: nowrap;
+}
+
+
+.engmtstatus a:hover {
+  color:#fff;
+  background-color: #21354F;
+}
+                    </code>
+                </pre>
+            </p>
+        </div><!-- /tab2-->
+
+    </div><!-- /tab-content-->
+
+</div><!-- /tabs-->
+ 
+ 
+
+
+</div> <!--/module-->

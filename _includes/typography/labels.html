@@ -5,12 +5,24 @@
 Common labels that are used in CW apps.
 </p>
 
+<span class="labelstag">Short name: </span> <span class="value">ZZ12345</span>
 
-<span class="filters label"> LABEL ON FILTERS </span>
+<div class="filters">
+    <span class="label"> LABEL ON FILTERS </span><input class="inset-shadow" id="loanref" placeholder="Input Value" value="" name="reference">
+</div>
 
-<span class="dark titlesection">
-	<span class="label">This is a label on a dark bg</span>
-</span>
+<div class="dark">
+    <span class="titlesection">
+    	<span class="label">ENGAGEMENT STATUS</span> <span class="status"><h1>ENGAGEMENT IS OPEN</h1></span>
+       
+        <span class="label">Tracking #: </span><span class="value">ZZ12345</span>
+    </span>
+
+
+
+</div>
+
+
 
 <!-- *************************
         Coding Tabs 
@@ -27,7 +39,18 @@ Common labels that are used in CW apps.
             <p>
                 <pre class="language-markup">
                     <code>
-&lt;span class="filters label"> LABEL ON FILTERS &lt;/span>
+&lt;span class="labelstag">Short name: &lt;/span> &lt;span class="value">ZZ12345&lt;/span>
+
+&lt;div class="filters">
+    &lt;span class="label"> LABEL ON FILTERS &lt;/span>&lt;input class="inset-shadow" id="loanref" placeholder="Input Value" value="" name="reference">
+&lt;/div>
+
+&lt;div class="dark">
+    &lt;span class="titlesection">
+        &lt;span class="label">ENGAGEMENT STATUS&lt;/span> &lt;span class="status">&lt;h1>ENGAGEMENT IS OPEN&lt;/h1>&lt;/span>
+       
+        &lt;span class="label">Tracking #: &lt;/span>&lt;span class="value">ZZ12345&lt;/span>
+    &lt;/span>
                     </code>
                 </pre>
             </p>
@@ -37,7 +60,42 @@ Common labels that are used in CW apps.
             <p>
                 <pre class="language-css">
                     <code>
-                      <!--CSS-->
+.labelstag {
+    color: #949494;
+    font-size: 9px;
+    padding-right: 4px;
+    font-weight: bold;
+}
+
+.value {
+    font-weight: bold;
+    padding-right: 12px;
+}
+
+.filters{ 
+    padding: 8px;
+    background: url(../images/pattern-head-gray.png) repeat;
+}
+
+.filters .label{
+    padding: 2px 0 1px 2px;
+    font-size: 9px;
+    color: #949494;
+    margin-right: 3px;
+}
+
+.dark {
+    background-color: #556996;
+    padding: 10px;
+    color: white;
+}
+
+.titlesection .label{
+    color: #d2e0f0;
+    font-size: 10px;
+    font-weight: bold;
+}
+
                     </code>
                 </pre>
             </p>

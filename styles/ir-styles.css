@@ -78,11 +78,10 @@ img { border:none; }
 /* Labels on dark background */
 
 .tableheader .label, .titlesection .label, .buttonbar .label, .buttoncontainer .label {
-	color:#a5b9d1;
+	color:#d2e0f0;
 	font-size:10px;
 	font-weight:bold;
 }
-
 
 .titlesection .prp {
 	font-size: 8.5px;

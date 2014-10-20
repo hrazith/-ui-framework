@@ -254,7 +254,6 @@ Filters
              $filters
 **************************************************/
 .filters{ 
-    right: 18px;
     padding: 8px;
     background: url(../images/pattern-head-gray.png) repeat;
 }
@@ -279,6 +278,32 @@ Filters
   padding: 2px 0 1px 2px;
 }
 
+.status h1 {
+  color: white;
+font-size: 20px;
+margin-bottom: 10px;
+text-shadow: 1px 1px 1px #2e2e2e;
+}
+
+.tag2 {
+font-size: 9px;
+color: #d2e0f0;
+text-shadow: none;
+font-weight: bold;
+}
+
+
+.labelstag {
+color: #949494;
+font-size: 9px;
+padding-right: 4px;
+font-weight: bold;
+}
+
+.value {
+font-weight: bold;
+padding-right: 12px;
+}
 
 /*******************************
           alerts
@@ -302,12 +327,79 @@ margin-top: 12px;}
 
 .hot {color: #e54e4b !important;}
 
+
+/*******************************
+          statuses
+*******************************/
+
+.hipri {
+  background-color:#E54E4B;
+  border: 1px solid #E54E4B;
+  color: #fff !important;
+  font-size: 8.5px;
+  font-weight: bold;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 2px 3px;
+  text-transform:uppercase;
+  margin-left: 3px;
+  white-space: nowrap;
+}
+
+.alert_status_type {
+font-weight: bold;
+color: #fff;
+background: #21354F;
+padding: 1px 6px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+-khtml-border-radius: 2px;
+border: 1px solid #21354f;
+}
+
+.change {
+font-size: 8px !important;
+color: #fff !important;
+fnt-weight: normal !important;
+cursor: pointer;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+background-color: #D5600A;
+padding: 2px 2px;
+text-transform: uppercase;
+margin-left: 3px;
+font-weight: bold;
+}
+
+.engmtstatus a {
+border: 1px solid #556996;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-khtml-border-radius: 3px;
+-webkit-border-radius: 3px;
+padding: 2px 8px;
+color: #556996;
+white-space: nowrap;
+}
+
+
+.engmtstatus a:hover {
+  color:#fff;
+  background-color: #21354F;
+}
+
 /**************************************************
              $pagination
 **************************************************/
 
 .pagination {
-  float: right;
+  /*float: right;
+  for example we dont need to float to right
+  */
+
   margin-top: 12px;
 }
 
@@ -340,4 +432,12 @@ margin-top: 12px;}
 
 .pagination .button:nth-of-type(1).disabled {   border-right: 0; }
 .pagination .button:nth-of-type(2).disabled {   border-left: 0; }
+
+/**********************
+        footer
+**********************/
+
+.light-blue {
+color: #a5b9d1;
+}
 

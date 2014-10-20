@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/* SERVICE WORKS UI - CSS Document */
+
+	/* defines all UBS styles and rules */
+	@import 'global.css';
+
+
+	/*
+	TIP: 
+	Background: #f0f0f0
+	Text: #2e2e2e
+	Gray: #949494
+	Light Gray: #d7d7d7
+	Blue: #556996
+	Light Blue: #a5b9d1
+	Dark Blue: #21354F
+	Red?: #d5600a
+	Alert Red: #e54e4b
+	Orange: #D5600A 
+	Yellow: #FDF2D3;
+	Pale Yellow: #FFFAF0
+	Dull yello: #eeebe2;
+	
+	*/
+
+/****************** GLOBAL ************************/
+
+
+
+/**************************************************
+						 $start
+**************************************************/
+
+.titlebar { 
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #D7D7D7;
+    border-top: 1px solid #D7D7D7;
+    height: 68px;
+    position: relative;
+}
+
+.titlebar h1 {
+	color: #556996;
+    padding: 24px 0 24px 12px;
+    font-size: 24px;
+}
+
+.titlebar .links a, .message a{
+	color: #556996;
+	border-bottom: 1px dotted #556996;
+}
+
+.titlebar .links {
+	position: absolute;
+	right: 18px;
+	top: 28px;
+}
+
+.main-content {
+	background: url('../images/v-sep.png') no-repeat 726px 0;
+	overflow: auto;
+}
+
+
+.shortname:before,.usertype:before,.faid:before, .plantype:before, .englabel { 
+	color: #949494;
+	font-size: 9px;
+	padding-right: 4px;
+}
+.usertype:before { content: "Client Type:"; }
+.shortname:before { content: "Short Name:"; }
+.faid:before { content: "FAID:"; }
+.plantype:before { content: "Plan Type:"; }
+.dates { text-align: center;}
+
+/**************************************************
+						 $engagement 
+**************************************************/
+
+div.engagement {
+	padding: 18px;
+	border: 1px solid #c0c0c0;
+	margin: 20px auto 50px auto;
+	background: url('../images/splitter.png') repeat-x 0 204px #fff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; /* future proofing */
+	-khtml-border-radius: 4px; /* for old Konqueror browsers */
+	width: 93%;	
+}
+
+.message { font-size: 14px; color: #D5600A; margin-bottom: 10px;}
+
+
+.shadow {
+  -moz-box-shadow:    0 0 3px 0 #ccc;
+  -webkit-box-shadow: 0 0 3px 0 #ccc;
+  box-shadow:         0 0 3px 0 #ccc;
+}
+
+ul.bio { 
+	margin: 0 auto 12px auto; 
+}
+
+ul.bio li {
+	display: inline;
+	padding-right: 12px;
+	font-weight: bold;
+}
+
+table.bio { margin-bottom: 10px;}
+.tag { 
+	color: #949494;
+	font-size: 9px;
+	padding-right: 4px; 
+	font-weight: bold;
+}
+
+.value {
+	font-weight: bold;
+	padding-right: 12px;
+}
+
+.engagement .dash {
+	background: url('../images/intake-bg.png') no-repeat #556996;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* future proofing */
+	-khtml-border-radius: 3px; /* for old Konqueror browsers */
+	color: #fff;
+	height: 120px;
+}
+
+.countdown{
+	width: 160px;
+	height: 96px;
+	padding: 24px 0 0 0;
+	float: left;
+	margin-right: 12px;
+	background: url('../images/countdown-line.png') no-repeat 158px 8px;
+}
+
+.countdown h1, .table-dash h1 {
+	color: #fff;
+	font-size: 36px;
+	text-align:center;
+	padding-bottom: 16px;
+}
+
+.status h1, .countdown h1, .table-dash h1 {
+	text-shadow: 1px 1px 1px #2e2e2e;
+	filter: Shadow(Color=#2e2e2e, Direction=45, Strength=1);
+	position: relative;
+}
+
+.countdown h1, .table-dash h1 {
+	background: url('../images/days.png') no-repeat center 36px;
+}
+
+
+/*
+.countdown h1:after, .table-dash h1:after {
+	content: "DAYS";
+	font-size: 14px;
+	text-shadow: none;
+	position: absolute;
+	top: 40px;
+	left: 62px;
+}
+*/
+
+.countdown p, .countdown p.interrupt, .table-dash p {
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;	
+
+}
+
+.countdown p.interrupt {
+	color: #ffdf4b;
+}
+
+.countdown p.info {
+	background: url('../images/info2.png') no-repeat center 0;
+	padding-top: 24px;
+} 
+
+
+.countdown p.delivered {
+	color: #8ed037;
+	padding-top: 42px;
+	font-size: 16px;
+	background: url('../images/check-m.png') no-repeat center 10px;
+}
+
+.countdown p.interrupt span {
+	color: #d2e0f0;
+}
+
+.countdown p.interrupt span, .countdown p.delivered span  {
+	font-size: 18px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.postit{
+	width: 160px;
+	height: 90px;
+	padding: 50px 0 0 8px;
+	float: left;
+	margin-right: 4px;
+	background: url('../images/post-it.png') no-repeat 10px 10px;
+}
+
+.overdue {
+	color: #d5600a;
+	padding: 2px 6px;
+	border: 2px solid #d5600a;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 16px;
+}
+
+.status {
+	width: 250px;
+	padding: 18px 0 0 18px;
+	float: left;
+	background: url('../images/status-line.png') no-repeat 0 60px;
+}
+
+
+.tag2 { 
+	font-size: 9px;
+	color:#d2e0f0;
+	text-shadow: none; 
+	font-weight: bold;
+}
+
+.status h1 { 
+	font-size: 20px; 
+	margin-bottom: 10px;
+}
+
+
+/*
+
+.status h1:after {
+	content: "ENGAGEMENT STATUS";
+	font-size: 9px;
+	color:#d2e0f0;
+	text-shadow: none;
+	position: absolute;
+  	top: 0;
+  	left: 0;
+}
+
+*/
+
+.tracking, .sa-date {
+	font-size: 13px;
+	font-weight: bold;	
+}
+
+.tracking:before {
+	content: "Tracking Acct #:";
+	padding-right: 6px;
+	font-size: 10px;
+	color:#d2e0f0;
+}
+
+.sa-date { 
+	display: block;
+	margin-top: 4px;
+}
+
+.sa-date:before {
+	content: "Original SA date:";
+	padding-right: 6px;
+	font-size: 10px;
+	color:#d2e0f0;
+}
+
+.type {
+	font-weight: bold;
+	color: #fff;
+	background: #21354F;
+	padding: 1px 6px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px; /* future proofing */
+	-khtml-border-radius: 2px; /* for old Konqueror browsers */
+	border: 1px solid #21354f;
+}
+
+.fee-summary {
+	width: 217px;
+	height: 120px;
+	color: #2e2e2e;
+	float: left;
+	background: url('../images/fee-ledger.png') no-repeat 0 8px;
+
+}
+
+.fee-summary table {
+	margin: 52px 0 0 142px;
+}
+
+.h-tabs {
+	margin-top: 24px; 
+}
+
+.tab-content-container {
+	margin-top: 20px;
+}
+
+table td.notyet  { padding-left: 20px !important; }
+table td.complete { 
+	background: url('../images/check-s.png') no-repeat 3px 6px;
+	padding-left: 20px !important;
+}
+table .icon-check-alt { color: #3c9d1b; }
+
+.table-dash {
+	border: 1px solid #C9C9C9;
+	float: left;
+	width: 160px;
+	height: 100px;
+	padding-top: 12px;
+   -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* future proofing */
+	-khtml-border-radius: 3px; /* for old Konqueror browsers */
+	background-color: #556996;
+}
+
+.table-dash p { color: #fff; padding: 0 12px; }
+
+.emphasize {
+	color: #D5600A !important;
+	border-color: #D5600A !important;
+} 
+
+.renewal-stat {
+	overflow: auto;
+}
+
+.renewal-stat .datagrid {
+	width: 73%;
+	float: right;
+}
+
+.paytitle{
+	margin-bottom: 4px;
+	font-size: 12px;
+}
+
+.paytitle:nth-of-type(2) { margin-top: 24px;}
+
+/**************************************************
+						 $side panel 
+						 $announcements-area
+
+**************************************************/
+
+.announcements-area h3 {
+	color: #21354F;
+	font-size: 14px;
+	margin: 20px 0 4px 0;
+}
+
+.announcements-area h4 {
+	font-size: 13px;
+	color:#949494;
+	margin-top: 13px;
+}
+
+.announcements-area li { margin-bottom: 8px; padding-left: 24px;}
+.announcements-area li a{ color: #556996;}
+.announcements-area li a:hover { text-decoration: underline;}
+.pdf { 
+	background: url('../images/pdf.png') no-repeat;
+	padding: 3px 0 6px 18px;
+}
+.warning { background: url('../images/warning.png') no-repeat;}
+.info { background: url('../images/info.png') no-repeat;}
+.announcements-area h3:nth-of-type(2) { margin-top: 24px;}
+
+.hot { color:#e54e4b !important;}
+
+
+.announcements-area ul {
+	margin-top: 10px;
+}
+
+.announcements-area [class*="icon-"] { margin-left: -22px; color: #556996;}
+
+.ubsfees { margin: 12px 0 8px 0; }
+.inf {
+	 background:#fff;
+		padding: 12px;
+}
+.inf td {
+	border-bottom: 1px dotted #949494;
+	padding: 6px 0 4px 0;
+
+}
+
+.inf .label { 
+	text-align: right; 
+	font-size: 12px;
+	font-weight: bold;
+	color: #21354F;
+	width: 120px;
+	padding-right: 30px;
+
+}
+.footnote { 
+	font-size: 11px;
+	color: #949494;
+	margin-top: 12px;
+
+}
+
+
+/**************************************************
+						 $modal
+
+**************************************************/
+
+.modal-content h2 {
+	color: #556996;
+	font-size: 14px;
+	margin-bottom: 6px;
+
+}
+
+.modal-content table {
+	margin-bottom: 24px;
+}
+

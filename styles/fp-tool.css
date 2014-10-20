@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* SERVICE WORKS UI - CSS Document */
+
+	/* defines all UBS styles and rules */
+	@import 'global.css';
+
+
+	/*
+	TIP: 
+	Background: #f0f0f0
+	Text: #2e2e2e
+	Gray: #949494
+	Light Gray: #d7d7d7
+	Blue: #556996
+	Light Blue: #a5b9d1
+	Dark Blue: #21354F
+	Red?: #d5600a
+	Alert Red: #e54e4b
+	Orange: #D5600A 
+	Yellow: #FDF2D3;
+	Pale Yellow: #FFFAF0
+	Dull yello: #eeebe2;
+	green: #3C9D1B;;
+	
+	*/
+
+
+div.unit-container {
+	border: 1px solid #c0c0c0;
+	margin: 20px auto;
+	background-color: #fff;
+	overflow: auto;
+	position: relative;
+}
+
+.engmtstatus a {
+	border: 1px solid #556996;
+	        border-radius: 3px; /* future proofing */
+	   -moz-border-radius: 3px;
+	 -khtml-border-radius: 3px; /* for old Konqueror browsers */
+	-webkit-border-radius: 3px;
+	padding: 2px 8px;
+	color:#556996;
+}
+
+.engmtstatus a:hover {
+	color:#fff;
+	background-color: #21354F;
+
+}
+
+
+ .dash_fp {
+	background: url('../images/intake-bg.png') no-repeat #556996;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* future proofing */
+	-khtml-border-radius: 3px; /* for old Konqueror browsers */
+	color: #fff;
+	height: 143px;
+	margin: 18px;
+	padding: 18px;
+}
+
+.bio-major li, .bio-minor li {
+	display: inline;
+	margin-right: 40px;
+}	
+.bio-minor li { margin-right: 30px; }
+.minor {
+	background: url("../images/bio-line.png") no-repeat top center ;
+	padding-top: 10px;
+}
+
+
+
+.datagrid2 {
+	border-collapse: collapse;
+}
+
+.datagrid2 thead tr th {
+	text-align: left;
+	padding: 0 8px 3px 8px;	
+}
+
+
+.datagrid2 tbody tr td {
+	padding: 0 30px 18px 8px;
+}
+
+
+.bio-major td {
+	padding-right: 40px;
+}
+
+.bio-major li span {
+		text-shadow: 1px 1px 1px #2E2E2E;
+		color: #FFFFFF;
+    	font-size: 18px;
+    	font-weight: bold;
+    	position: relative;
+    	padding-top: 12px;
+}
+
+
+.bio-major .type span {
+	font-size: 12px;
+	text-shadow: none;
+	font-weight: bold;
+    color: #fff;
+    background: #21354F;
+    padding: 1px 6px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border: 1px solid #21354f;
+
+
+}
+
+.bio-minor li span {
+		color: #FFFFFF;
+    	font-size: 12px;
+    	position: relative;
+    	padding-top: 12px;
+}
+
+.bio-minor li { margin-bottom: 6px; }
+
+.tracking:before, .faid:before, .sa-date:before,  .totalfee:before, .clientname:before, .type:before {
+	color: #D2E0F0;
+	font-size: 10px;
+    white-space: nowrap;
+    text-shadow: none;
+}
+
+.tracking:before { content: "TRACKING ACCT #"; }
+.faid:before { content: "FAID"; }
+.totalfee:before  { content: "TOTAL FEE "; }
+.clientname:before  { content: "CLIENT NAME "; }
+
+
+.fa-name:before { content: "FA Name"; }
+.co-client:before { content: "Co-Client"; }
+.sa-date:before  { content: "Date of SA";}
+.delivery-date:before { content: "Plan delivery date"; }
+.net-worth:before  { content: "Net Worth"; }
+.balance:before { content: "Balance"; }
+.engmt-id:before { content: "Engmt ID"; }
+.address:before  { content: "Address"; }
+.status:before  { content: "Engagement Status"; }
+
+/*
+.fa-name:before, .status:before, .co-client:before, .delivery-date:before, .net-worth:before, .balance:before, .engmt-id:before, .address:before  {
+	color: #D2E0F0;
+    font-size: 10px;
+    padding-right: 6px;
+    white-space: nowrap;
+}
+*/
+
+.fa-name:before, .status:before, .co-client:before, .delivery-date:before, .net-worth:before, .balance:before, .engmt-id:before, .address:before  {
+	
+	color: #D2E0F0;
+	font-size: 10px;
+	position: absolute;
+    top:0;
+    left:0;
+    white-space: nowrap;
+    text-shadow: none;
+}
+
+/**************************************************
+				TABLE
+**************************************************/
+.bio-major td {
+		text-shadow: 1px 1px 1px #2E2E2E;
+		color: #FFFFFF;
+    	font-size: 18px;
+    	font-weight: bold;
+    	position: relative;
+    	padding-top: 12px;
+}
+
+.bio-major th{ 
+	color: #D2E0F0;
+	font-size: 10px;
+    white-space: nowrap;
+    text-shadow: none;
+}
+.bio-minor th{ 
+color: #D2E0F0;
+	font-size: 10px;
+    white-space: nowrap;
+    text-shadow: none;
+}
+
+
+/**************************************************
+						 $messages
+**************************************************/
+
