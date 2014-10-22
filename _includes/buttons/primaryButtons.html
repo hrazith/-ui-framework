@@ -190,7 +190,38 @@ a.button.disabled:active {
         <p>
             <pre class="language-css">
                 <code>
-                  <!--CSS-->
+a.button {
+  background-image: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6')";
+  border: 1px solid #949494;
+  
+  padding: 4px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  float: left;
+
+  text-shadow: rgba(0,0,0,.2) 0 1px 0;
+  color: white;
+  font-size: 12px;
+  font-weight:bold;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+a.button:hover {
+  border-color: #556896;
+  background: #556896;
+  color: #f0f0f0;
+}
+
+a.button:active {
+  background: #21354f;
+  margin-top: 1px;
+}
                 </code>
             </pre>
         </p>
