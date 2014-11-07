@@ -32,6 +32,10 @@
 &lt;a class="button" href="#">
   &lt;span> Primary Button &lt;/span>
 &lt;/a>
+
+&lt;a class="button small" href="#">
+&lt;span>Primary Small&lt;/span>
+&lt;/a>
                 </code>
             </pre>
         </p>
@@ -42,7 +46,6 @@
             <pre class="language-css">
                 <code>
 a.button {
-  
   background-image: -moz-linear-gradient(top, #b3bfdb, #3c5da6);
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #b3bfdb),color-stop(1, #3c5da6));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b3bfdb', EndColorStr='#3c5da6');
@@ -59,10 +62,15 @@ a.button {
   text-shadow: rgba(0,0,0,.2) 0 1px 0;
   color: white;
   font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight:bold;
   text-decoration: none;
   vertical-align: middle;
 }
+
+a.button.small {
+padding: 3px 6px;
+font-size: 11px;}
 
 a.button:hover {
   border-color: #556896;
